@@ -1,13 +1,14 @@
-# Dashboard
+# IMDB Dashboard
 
-R'Beauty is a make up artist based in Amsterdam, The Netherlands. She is a consumate professional, talented, reliable and enthusiastic about
-hairdressing and makeup. R'Beauty offers all of her services at her studio including hairstyles and makeup lessons, and also travels to clients 
-through out The Netherlands as required. 
+The IMDB dashboard is a data set of 1,000 most popular movies on IMDB in the time period between the years 2006 - 2016. The data set contains
+blockbuster movies such as The Guardians of galaxy Vol.1, La La Land, Fantastic Beasts and Where to Find Them, 	Deadpool and so much more! 
 
-R'Beauty works on beautiful weddings, commercial shoots, special occasions, corporate events and can always work with multiple clients as 
-when needed. 
+The data fields included in this data set are: Title, Genre, Description, Director, Actors, Year, Runtime, Rating, Votes, Revenue, Metascrore
+
 
 # UX
+The dashboard is for movie lovers, critics and users who are interested in movie reviews. 
+
 Basically, the website is for my girlfriend. She's a student in The Netherlands and she does make up services as a part time job.
 Currently, her online presence is only on Instagram and on facebook. She feels that for her business to get proper exposure, she needs to 
 have a website. So in essence, she needs a website in order to boost her online presence and also to have a web presence which hitherto, 
@@ -49,6 +50,22 @@ You can find the link to the wireframe here:
 
 
 # Features
+
+| Columns            | Description                                                                                                      | Variable            | 
+|--------------------|------------------------------------------------------------------------------------------------------------------|---------------------| 
+| Rank               | Movie rank order.                                                                                                | Numeric             | 
+| Title              | The title of the film.                                                                                           | String              | 
+| Genre              | A comma-separated list of genres used to classify the film.                                                      | String              |       
+| Description        | Brief one-sentence movie summary.                                                                                | String              | 
+| Director           | The name of the film's director.                                                                                 | String              | 
+| Actors             | A comma-separated list of the main stars of the film.                                                            | String              | 
+| Year               | The year that the film released as an integer.                                                                   | Numeric             | 
+| Runtime (Minutes)  | The duration of the film in minutes.                                                                             | Numeric             | 
+| Rating             | User rating for the movie 0-10.                                                                                  | Numeric             | 
+| Votes              | Number of votes.                                                                                                 | Numeric             | 
+| Revenue (Millions) | Movie revenue in millions.                                                                                       | Numeric             | 
+| Metascore          | An aggregated average of critic scores. Values are between 0 and 100. Higher scores represent positive reviews.  | Numeric             | 
+
 
 #### 3.1 Home Page 
 Here is basically the main page when a user clicks on R'beauty.com. This section should summarise either in words or details what the

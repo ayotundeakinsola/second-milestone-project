@@ -7,21 +7,31 @@ The data fields included in this data set are: Title, Genre, Description, Direct
 
 
 # UX
-The dashboard is for movie lovers, critics and users who are interested in movie reviews. 
 
-Basically, the website is for my girlfriend. She's a student in The Netherlands and she does make up services as a part time job.
-Currently, her online presence is only on Instagram and on facebook. She feels that for her business to get proper exposure, she needs to 
-have a website. So in essence, she needs a website in order to boost her online presence and also to have a web presence which hitherto, 
-was missing. 
-This project is going to provide the layout for her website when it gets hosted eventually. This project isn't just to be graded but 
-the goal is fot it to be hosted and actually be the official website for my girlfriend.
 
-I personally feel that by buildong a website for my girlfriend, it would boost her business image online and also attract more customers.
+##### The dashboard is for: 
+
+* Movie fans
+* Film critics
+* Publications
+* Curators
+
+##### Why would a user use the dashboard
+
+* Movie fans can check the ratings of their favorite movie
+* Check for recommended movies as a result of ratings
+* Check what critics say about a movie
+
+##### How does my dashboard help clients/users? 
+
+* It provides a catalogue of movies between the period 2006 - 2016
+* The dashboard provides fans with ratings for movies
+* The dashboard also serves as a guide on movie selection as a result of the movie critics and ratings
 
 
 #### Wireframe
 You can find the link to the wireframe here: 
-[Wireframe](https://1drv.ms/w/s!AqARRU4jO5elrGuPVFHl-wEg-BBK?e=ng42BX "Wireframe")
+[Wireframe](https://1drv.ms/w/s!AqARRU4jO5elrXUeXA6XbMjqSlMW?e=rWxEYi "Wireframe")
 
 
 #### User Stories

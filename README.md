@@ -6,6 +6,7 @@ blockbuster movies such as The Guardians of galaxy Vol.1, La La Land, Fantastic 
 The data fields included in this data set are: Title, Genre, Description, Director, Actors, Year, Runtime, Rating, Votes, Revenue, Metascrore
 
 
+
 # UX
 
 
@@ -16,7 +17,7 @@ The data fields included in this data set are: Title, Genre, Description, Direct
 * Publications
 * Curators
 
-##### Why would a user use the dashboard
+##### Why would a user use the dashboard:
 
 * Movie fans can check the ratings of their favorite movie
 * Check for recommended movies as a result of ratings
@@ -28,38 +29,41 @@ The data fields included in this data set are: Title, Genre, Description, Direct
 * The dashboard provides fans with ratings for movies
 * The dashboard also serves as a guide on movie selection as a result of the movie critics and ratings
 
-
 #### Wireframe
 You can find the link to the wireframe here: 
 [Wireframe](https://1drv.ms/w/s!AqARRU4jO5elrXUeXA6XbMjqSlMW?e=rWxEYi "Wireframe")
 
+### User Stories
 
-#### User Stories
+#### From the Fans perspective: 
 
-* As a customer I want to be able to view a selection of various make up services.
+* As a fan, I want to get an in-depth review from critics and fellow fans on movies released.
 
-* As as customer I would want to contact the makeup artist.
+* As as a fan, I want to know the revenue a movie generated.
 
-* As a potential customer and paying customer I want to see the address of the shop  
+* As a fan, I am interested in knowing the name of the actors in the movie.  
 
-* As a potential customer and paying customer I want to see the telephone contact of the shop
+* As a fan, I would like to know what year the movie was released.
 
-* As a potential customer and paying customer I want to contact the makeup artist
+* As a fan, I would like to know the director of my movie selection. 
 
-* As a potential customer, I would also want to know the price which can influence my decision.
+#### From the Film critics/publication/curator perspective: 
 
-* As a potential customer, I would want to see a portfolio/sample of previous make up services rendered.
+* As a film critic,  I would love to give goodd recommendation to the fans.
 
-* As a potential customer, I would love to read about the reviews of some customers who have used R'beauty services.
+* As a film critic, I am interested in the runtime of the movie.
 
-* As the make up artist, I want to know more about the makeup artist
+* As a film critic, I am interested in the number of user votes for movies.
+
+* As a publication, I am interested in the metascore of critics.
  
-* As the make up artist, I want to provide my social media links so that customers can follow my updates
+* As a curator, I am intersted in the movie rating. 
 
-* As the makeup artist, I want my logo on to be visible on my website
 
 
 # Features
+
+The dataset used in this project is explained in the table below: 
 
 | Columns            | Description                                                                                                      | Variable            | 
 |--------------------|------------------------------------------------------------------------------------------------------------------|---------------------| 
@@ -77,51 +81,26 @@ You can find the link to the wireframe here:
 | Metascore          | An aggregated average of critic scores. Values are between 0 and 100. Higher scores represent positive reviews.  | Numeric             | 
 
 
-#### 3.1 Home Page 
-Here is basically the main page when a user clicks on R'beauty.com. This section should summarise either in words or details what the
-website is all about. The first intro to the website should tell what kind of website it is. 
-
-#### 3.2 Services 
-The services section shows the various kind of services offered by R'beauty. It will display using icons the services offered by R'beauty.
-
-#### 3.3 Portfolio
-The portfolio section shows the previous works of the Makeup artist. Here you can see the different types of makeup styles that R'beauty has carried out.
-
-#### 3.4 About 
-In this section, the Makeup artist gives a brief overview of how  the business started and it also gives an insight to the way the business is structured.
-
-#### 3.5 Prices
-In this section, the various prices for the makeup services are listed.
-
-#### 3.5 Reviews
-In this section, feedback from customers are posted for potential customers to read. This section is meant to serve as a way of confirming how good the makeup artist is. 
-
-#### 3.6 Contact 
-The contact section is meant for users who want to get in touch with the makeup artist.
 
 ### Features Left to Implement
 In the future:
  
 * The images in the portfolio section should be animated
 
-* The icons in the services section should actually lead to another page
-
-* There submit button should have a modal class so when clicked it brings out a pop-up
 
 
 # Technologies Used
 
 | Technologies       | Website                                                                                                                                                                                                              | Comments                                                                                                                |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| HTML               | [W3Schools](https://www.w3schools.com/ "W3Schools"), [Stack Overflow](https://stackoverflow.com/ "Stack Overflow")                                                                                                   |  I used these websites to check  for proper syntax for my project                                                       |
-| CSS                | [W3Schools](https://www.w3schools.com/ "W3Schools"), [Charliepark](https://charliepark.org/bootstrap_buttons/ "Charliepark")                                                                                         |  I used this website to check for different ways to style my CSS.                                                        |
-| Icons              | [Font Awesome](https://www.w3schools.com/ "Font Awesome"), [Flaticon](https://www.flaticon.com/ "Flaticon")                                                                                                          |  I used these websites to download the icons for my project.                                                             |
-| JQuery             | [JQuery](https://jquery.com/ "JQuery")                                                                                                                                                                               |  I used it to to simplify HTML DOM tree traversal, manipulation, as well as CSS animation.                               |
-| Javascript         | [Javascript](https://www.javascript.com/ "Javascript")                                                                                                                                                               |  I used this programming language as it enables my page to be responsive and it is an essential part of web development. |
-| Font               | [Google Fonts](https://fonts.google.com/ "Google Fonts")                                                                                                                                                             |  It is an open source designer web font and I used it to design the typography in my project.                            |
-| Validation Service | [CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input "CSS Validation Service"), [Markup Validation Service](https://validator.w3.org/#validate_by_input "Markup Validation Service")      |  I used both the HTML & CSS Validator to check the validity of my web documents.                                         |
-| Bootstrap          | [Bootstrap](https://getbootstrap.com/ "Bootstrap")                                                                                                                                                                   |  I used this open source toolkit to develop my HTML,CSS and JS.                                                          |
-| Tables Generator   | [Tables Generator](https://www.tablesgenerator.com/ "Tables Generator")                                                                                                                                              |       I used this website to generate tables for my README.md file.                                                      |
+| HTML               | [W3Schools](https://www.w3schools.com/ "W3Schools"),                                                                                                                                                                 |  I used these websites to check  for proper syntax for my project                                                       |
+| CSS                | [W3Schools](https://www.w3schools.com/ "W3Schools"),                                                                                                                                                                 |  I used this website to check for different ways to style my CSS.                                                       |
+| JQuery             | [JQuery](https://jquery.com/ "JQuery")                                                                                                                                                                               |  I used it to to simplify HTML DOM tree traversal, manipulation, as well as CSS animation.                              |
+| Javascript         | [Javascript](https://www.javascript.com/ "Javascript")                                                                                                                                                               |  I used this programming language as it enables my page to be responsive and it is an essential part of web development.|
+| Validation Service | [CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input "CSS Validation Service"), [Markup Validation Service](https://validator.w3.org/#validate_by_input "Markup Validation Service")      |  I used both the HTML & CSS Validator to check the validity of my web documents.                                        |
+| Bootstrap          | [Bootstrap](https://getbootstrap.com/ "Bootstrap")                                                                                                                                                                   |  I used this open source toolkit to develop my HTML,CSS and JS.                                                         |
+| Tables Generator   | [Tables Generator](https://www.tablesgenerator.com/ "Tables Generator")                                                                                                                                              |  I used this website to generate tables for my README.md file.                                                          |
+
 
 
 # Testing
@@ -138,6 +117,7 @@ very fine but on the other hand, the code seems to be working fine. Perhaps in f
 
 Also, the CSS validation service helps check Cascading Style Sheets (CSS). When I used this service, it reported no error. The testing went well and
 I am fully confident in the style sheet.
+
 
 ### Testing user stories from the UX section 
 
@@ -184,6 +164,7 @@ I am fully confident in the style sheet.
 10. As the makeup artist, I want my logo on to be visible on my website 
               1. When the makeup artist arives on the webpage, the makeup artist lookout for the navigation menu
               2. In the navigation menu the makeup artist will see the logo for the business.
+
 
 ### Manual Testing
 
@@ -280,6 +261,9 @@ The website worked perfectly on other screen sizes and there was no issue with r
 5. Type git clone, and then paste the URL you copied in Step 2.
 6. Press Enter. Your local clone will be created.
 
+
+
+
 # Credits
 
 ### Content
@@ -287,20 +271,13 @@ The website worked perfectly on other screen sizes and there was no issue with r
 
 * The text in the price section was gotten from: [judyartofmakeup](http://www.judyartofmakeup.nl/nl/ "judyartofmakeup")
 
-* The text in the reviews section was provided by 3 different customers.
-
-*  The form in the contact section was made using bootstrap forms. 
 
 ### Media
 * The image in the home section was provided by the make up artist. 
 
 * The makeup icon in the services section was made by Surang from: [Flaticon](www.flaticon.com "Flaticon")
 
-* The hairstyle icon in the services section was made by dinosoftlabs: [Flaticon](www.flaticon.com "Flaticon")
 
-* The diploma icon in the services section was made by Smashicons from: [Flaticon](www.flaticon.com "Flaticon")
-
-* The images in the Portfolio section was gotten from: [Melaninwonder](https://www.melaninwonder.com/ "Melaninwonder")
 
 # Acknowledgements
 I received inspiration for this project from this website: [judyartofmakeup](http://www.judyartofmakeup.nl/nl/ "judyartofmakeup")

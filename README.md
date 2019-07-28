@@ -105,6 +105,10 @@ In the future:
 
 # Testing
 
+First I had to test if the data I downloaded (imdb.csv) was okay. I opened the graph.js file to run some commands and thereafter,
+I inspected the developers tool of the index.html file to see if the Array appeared in the console. Fortunately, it did and the data is actually
+good to use. 
+
 I used the following webistes to validate both my HTML and CSS files respectively.
 
 * [HTML-Validator](https://validator.w3.org/#validate_by_input "HTML-Validator")

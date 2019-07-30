@@ -3,7 +3,6 @@ queue()
     .await(makeGraphs);
 
 function makeGraphs(error, imdbData) {
-    debugger;
     var ndx = crossfilter(imdbData);
 
     show_rating(ndx);
@@ -15,8 +14,8 @@ function show_rating(ndx) {
     var dim = ndx.dimension(dc.pluck('Rating'));
     var group = dim.group();
 
-    dc.barchart("#rating")
-        .width(400)
+    dc.barChart("#rating")
+        .width(900)
         .height(300)
         .margins({ top: 10, right: 50, bottom: 30, left: 50 })
         .dimension(dim)

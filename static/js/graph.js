@@ -6,7 +6,7 @@ function makeGraphs(error, imdbData) {
     var ndx = crossfilter(imdbData);
 
     imdbData.forEach(function(d) {
-        d.Title = parseInt(d.Title);
+        d.Runtime = parseInt(d.Runtime);
     })
 
     show_rating(ndx);
@@ -34,11 +34,11 @@ function show_rating(ndx) {
 }
 
 function show_average_runtime(ndx) {
-    var dim = ndx.dimension(dc.pluck('Runtime'));
+    var dim = ndx.dimension(dc.pluck('Title'));
 
     function add_item(p, v) {
         p.count++;
-        p.total += v.Title;
+        p.total += v.Runtime;
         p.average = p.total / p.count;
         return p;
     }
@@ -50,7 +50,7 @@ function show_average_runtime(ndx) {
             p.average = 0;
         }
         else {
-            p.total -= v.Title;
+            p.total -= v.Runtime;
             p.average = p.total / p.count;
         }
         return p;

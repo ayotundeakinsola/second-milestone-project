@@ -14,8 +14,9 @@ The data fields included in this data set are: Title, Genre, Description, Direct
 
 * Movie fans
 * Film critics
-* Publications
+* Publications/Media outlets
 * Curators
+* Investors
 
 ##### Why would a user use the dashboard:
 
@@ -47,6 +48,8 @@ You can find the link to the wireframe here:
 
 * As a fan, I would like to know the director of my movie selection. 
 
+* As a fan, I am interested in the length of the movie.  
+
 #### From the Film critics/publication/curator perspective: 
 
 * As a film critic,  I would love to give goodd recommendation to the fans.
@@ -58,6 +61,10 @@ You can find the link to the wireframe here:
 * As a publication, I am interested in the metascore of critics.
  
 * As a curator, I am intersted in the movie rating. 
+
+#### From the Film investor perspective: 
+
+* As an investor, I am interested in knowing which genre is most profitable and which genres cost less to produce 
 
 
 
@@ -87,6 +94,9 @@ In the future:
  
 * The images in the portfolio section should be animated
 
+* Because of the scale of the project, I used a small database. For future references I would like to have information on plot, 
+  budget per movie and cost to make the movie, how many months for movie production, salary per actor, most watched movies. 
+
 
 
 # Technologies Used
@@ -100,6 +110,7 @@ In the future:
 | Validation Service | [CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input "CSS Validation Service"), [Markup Validation Service](https://validator.w3.org/#validate_by_input "Markup Validation Service")      |  I used both the HTML & CSS Validator to check the validity of my web documents.                                        |
 | Bootstrap          | [Bootstrap](https://getbootstrap.com/ "Bootstrap")                                                                                                                                                                   |  I used this open source toolkit to develop my HTML,CSS and JS.                                                         |
 | Tables Generator   | [Tables Generator](https://www.tablesgenerator.com/ "Tables Generator")                                                                                                                                              |  I used this website to generate tables for my README.md file.                                                          |
+| Crossfilter        | [Crossfilter](https://www.tablesgenerator.com/ "Crossfilter")                                                                                                                                                        |  I used this library to explore my large dataset                                                                        |
 
 
 
@@ -284,4 +295,5 @@ The website worked perfectly on other screen sizes and there was no issue with r
 
 
 # Acknowledgements
+The dataset is gotten from Kaggle website: [Kaggle](https://www.kaggle.com/PromptCloudHQ/imdb-data "Kaggle")
 I received inspiration for this project from this website: [judyartofmakeup](http://www.judyartofmakeup.nl/nl/ "judyartofmakeup")

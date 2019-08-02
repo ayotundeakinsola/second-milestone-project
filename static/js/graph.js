@@ -32,15 +32,85 @@ var bar_chart = new Chart(bar_ctx, {
                 hoverBorderWidth: 0
             },
             {
-                label: 'Warning',
-                data: dataPack2,
+                label: 'Adventure',
+                data: Adventure,
                 backgroundColor: "#FFA000",
                 hoverBackgroundColor: "#FFCA28",
                 hoverBorderWidth: 0
             },
             {
-                label: 'Error',
-                data: dataPack3,
+                label: 'Animation',
+                data: Animation,
+                backgroundColor: "#D32F2F",
+                hoverBackgroundColor: "#EF5350",
+                hoverBorderWidth: 0
+            },
+            {
+                label: 'Bigography',
+                data: Bigography,
+                backgroundColor: "#D32F2F",
+                hoverBackgroundColor: "#EF5350",
+                hoverBorderWidth: 0
+            },
+            {
+                label: 'Comedy',
+                data: Comedy,
+                backgroundColor: "#D32F2F",
+                hoverBackgroundColor: "#EF5350",
+                hoverBorderWidth: 0
+            },
+            {
+                label: 'Crime',
+                data: Crime,
+                backgroundColor: "#D32F2F",
+                hoverBackgroundColor: "#EF5350",
+                hoverBorderWidth: 0
+            },
+            {
+                label: 'Drama',
+                data: Drama,
+                backgroundColor: "#D32F2F",
+                hoverBackgroundColor: "#EF5350",
+                hoverBorderWidth: 0
+            },
+            {
+                label: 'Fantasy',
+                data: Fantasy,
+                backgroundColor: "#D32F2F",
+                hoverBackgroundColor: "#EF5350",
+                hoverBorderWidth: 0
+            },
+            {
+                label: 'Horror',
+                data: Horror,
+                backgroundColor: "#D32F2F",
+                hoverBackgroundColor: "#EF5350",
+                hoverBorderWidth: 0
+            },
+            {
+                label: 'Sci-fi',
+                data: Sci-fi,
+                backgroundColor: "#D32F2F",
+                hoverBackgroundColor: "#EF5350",
+                hoverBorderWidth: 0
+            },
+            {
+                label: 'Thriller',
+                data: Thriller,
+                backgroundColor: "#D32F2F",
+                hoverBackgroundColor: "#EF5350",
+                hoverBorderWidth: 0
+            },
+            {
+                label: 'Mystery',
+                data: Mystery,
+                backgroundColor: "#D32F2F",
+                hoverBackgroundColor: "#EF5350",
+                hoverBorderWidth: 0
+            },
+            {
+                label: 'Romance',
+                data: Romance,
                 backgroundColor: "#D32F2F",
                 hoverBackgroundColor: "#EF5350",
                 hoverBorderWidth: 0

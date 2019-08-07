@@ -111,6 +111,8 @@ In the future:
 | Bootstrap          | [Bootstrap](https://getbootstrap.com/ "Bootstrap")                                                                                                                                                                   |  I used this open source toolkit to develop my HTML,CSS and JS.                                                         |
 | Tables Generator   | [Tables Generator](https://www.tablesgenerator.com/ "Tables Generator")                                                                                                                                              |  I used this website to generate tables for my README.md file.                                                          |
 | Crossfilter        | [Crossfilter](https://www.tablesgenerator.com/ "Crossfilter")                                                                                                                                                        |  I used this library to explore my large dataset                                                                        |
+| Chartjs            | [chartjs](https://www.chartjs.org/ "chartjs")                                                                                                                                                                        |  I used this library to customise my charts                                                                             |
+
 
 
 
@@ -295,5 +297,6 @@ The website worked perfectly on other screen sizes and there was no issue with r
 
 
 # Acknowledgements
-The dataset is gotten from Kaggle website: [Kaggle](https://www.kaggle.com/PromptCloudHQ/imdb-data "Kaggle")
-I received inspiration for this project from this website: [judyartofmakeup](http://www.judyartofmakeup.nl/nl/ "judyartofmakeup")
+* The dataset is gotten from Kaggle website: [Kaggle](https://www.kaggle.com/PromptCloudHQ/imdb-data "Kaggle")
+
+* I learnt how to build a stacked bar graph from this website: [jsfiddle](https://jsfiddle.net/jhr5nm17/ "jsfiddle")

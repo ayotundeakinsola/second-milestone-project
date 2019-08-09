@@ -1,4 +1,9 @@
-/* Stacked Bar Chart */
+// Bar Chart
+
+
+
+
+//Stacked Bar Chart 
 queue()
     .defer(d3.csv, "data/imdbs.csv")
     .await(makeGraphs);

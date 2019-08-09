@@ -299,4 +299,4 @@ The website worked perfectly on other screen sizes and there was no issue with r
 # Acknowledgements
 * The dataset is gotten from Kaggle website: [Kaggle](https://www.kaggle.com/PromptCloudHQ/imdb-data "Kaggle")
 
-* I learnt how to build a stacked bar graph from this website: [jsfiddle](https://jsfiddle.net/jhr5nm17/ "jsfiddle")
+

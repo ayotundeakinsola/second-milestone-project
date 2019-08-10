@@ -152,7 +152,7 @@ function makeGraphs(error, imdbsData) {
     dc.renderAll();
 }
 
-// Bar Chart
+// Pie Chart
 function makeGraphs(error, transactionsData) {
     var ndx = crossfilter(transactionsData);
     var name_dim = ndx.dimension(dc.pluck('name'));

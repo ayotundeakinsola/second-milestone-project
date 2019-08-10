@@ -1,8 +1,3 @@
-// Bar Chart
-
-
-
-
 //Stacked Bar Chart 
 queue()
     .defer(d3.csv, "data/imdbs.csv")
@@ -151,8 +146,38 @@ function makeGraphs(error, imdbsData) {
         .x(d3.scale.ordinal())
         .xUnits(dc.units.ordinal)
         .legend(dc.legend().x(420).y(0).itemHeight(15).gap(5));
-    
+
     stackedChart.margins().right = 100;
-    
+
     dc.renderAll();
 }
+
+// Bar Chart
+function makeGraphs(error, transactionsData) {
+    var ndx = crossfilter(transactionsData);
+    var name_dim = ndx.dimension(dc.pluck('name'));
+    var total_spend_per_person = name_dim.group().reduceSum(dc.pluck('spend'));
+    dc.pieChart('#per-person-chart')
+        .height(330)
+        .radius(90)
+        .transitionDuration(1500)
+        .dimension(name_dim)
+        .group(total_spend_per_person);
+
+    var store_dim = ndx.dimension(dc.pluck('store'));
+    var total_spend_per_store = store_dim.group().reduceSum(dc.pluck('spend'));
+    dc.pieChart('#per-store-chart')
+        .height(330)
+        .radius(90)
+        .transitionDuration(1500)
+        .dimension(store_dim)
+        .group(total_spend_per_store);
+
+    var state_dim = ndx.dimension(dc.pluck('state'));
+    var total_spend_per_state = state_dim.group().reduceSum(dc.pluck('spend'));
+    dc.pieChart('#per-state-chart')
+        .height(330)
+        .radius(90)
+        .transitionDuration(1500)
+        .dimension(state_dim)
+        .group(total_spend_per_state);

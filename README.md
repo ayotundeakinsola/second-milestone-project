@@ -92,7 +92,11 @@ The dataset used in this project is explained in the table below:
 ### Features Left to Implement
 In the future:
  
-* The images in the portfolio section should be animated
+* The nature of the database made it difficult to classify movies. Movies do not distinctly belong to one genre. A movie like "Guardian of Galaxy" 
+isn't just Action; it is classified under other genres such as Adventure & Sci-Fi. This makes it very difficult when the developer is trying
+to get data about some movies in a particular genre. 
+Perhaps movie boards can make movie classification more cleare for data users. 
+
 
 * Because of the scale of the project, I used a small database. For future references I would like to have information on plot, 
   budget per movie and cost to make the movie, how many months for movie production, salary per actor, most watched movies. 
@@ -122,11 +126,13 @@ First I had to test if the data I downloaded (imdb.csv) was okay. I opened the g
 I inspected the developers tool of the index.html file to see if the Array appeared in the console. Fortunately, it did and the data is actually
 good to use. 
 
+I then edited the database as Javascript is key sensitive. Columns such as Revenue (Millions), Runtime (Minutes) was changed to Revenue and
+Runtime repectively.  
+
 I used the following webistes to validate both my HTML and CSS files respectively.
 
 * [HTML-Validator](https://validator.w3.org/#validate_by_input "HTML-Validator")
 
-* [CSS-validator](https://jigsaw.w3.org/css-validator/#validate_by_input "CSS-validator")
 
 The HTML validation service  helps check the validity of Web documents. When I used this service, it only brought out error messages for the form 
 in the contact section. I have tried correcting the bugs but it doesn't seem to work. On the front end, the codes for the forms seems to be working

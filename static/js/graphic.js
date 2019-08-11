@@ -5,6 +5,10 @@ queue()
 
 function makeGraphs(error, imdbsData) {
     var ndx = crossfilter(imdbsData);
+    
+    imdbsData.forEach(function(d){
+        d.Revenue = parseInt(d.Revenue);
+    })
 
     show_revenue_genre(ndx);
 
@@ -37,4 +41,22 @@ function show_revenue_genre(ndx) {
     }
 
     var RevenueByYearperGenre = dim.group().reduce(add_item, remove_item, initialise);
+    
+    
+     dc.barChart("#revenue-genre")
+        .width(400)
+        .height(300)
+        .margins({top: 10, right: 50, bottom: 30, left: 50})
+        .dimension(dim)
+        .group(RevenueByYearperGenre)
+        .valueAccessor(function(d){
+            return d.value.count;
+        })
+        .transitionDuration(500)
+        .x(d3.scale.ordinal())
+        .xUnits(dc.units.ordinal)
+        .elasticY(true)
+        .xAxisLabel("Year")
+        .yAxis().ticks(6);   
+        
 }

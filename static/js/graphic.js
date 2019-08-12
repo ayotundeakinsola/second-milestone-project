@@ -31,41 +31,14 @@ function show_genre_selector(ndx){
 // Bar Chart 
 function show_movie_year(ndx) {
     var dim = ndx.dimension(dc.pluck('Year'));
+    var group = dim.group();
 
-
-    function add_item(p, v) {
-        p.count++;
-        p.total += v.Revenue;
-        return p;
-    }
-
-    function remove_item(p, v) {
-        p.count--;
-        if (p.count == 0) {
-            p.total = 0;
-        }
-        else {
-            p.total -= v.Revenue;
-        }
-        return p;
-    }
-
-    function initialise() {
-        return { count: 0, total: 0 };
-    }
-
-    var TotalMoviePerYear = dim.group().reduce(add_item, remove_item, initialise);
-    
-    
      dc.barChart("#movie-year")
         .width(800)
         .height(300)
         .margins({top: 10, right: 50, bottom: 30, left: 50})
         .dimension(dim)
-        .group(TotalMoviePerYear)
-        .valueAccessor(function(d){
-            return d.value.count;
-        })
+        .group(group)
         .transitionDuration(500)
         .x(d3.scale.ordinal())
         .xUnits(dc.units.ordinal)

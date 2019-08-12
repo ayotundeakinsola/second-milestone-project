@@ -13,6 +13,8 @@ function makeGraphs(error, imdbsData) {
     show_movie_year(ndx);
     show_ratings_genre(ndx);
     show_stacked_chart(ndx);
+    show_revenue_genre(ndx);
+    show_runtime_genre(ndx);
 
     dc.renderAll();
 }
@@ -62,6 +64,32 @@ function show_ratings_genre(ndx) {
         .transitionDuration(1500)
         .dimension(rating_dim)
         .group(total_rating_per_genre);
+}
+
+function show_revenue_genre(ndx) {
+    var revenue_dim = ndx.dimension(dc.pluck('Genre'));
+    var total_revenue_per_genre = revenue_dim.group().reduceSum(dc.pluck('Revenue'));
+
+
+    dc.pieChart('#revenue')
+        .height(330)
+        .radius(90)
+        .transitionDuration(1500)
+        .dimension(revenue_dim)
+        .group(total_revenue_per_genre);
+}
+
+function show_runtime_genre(ndx) {
+    var runtime_dim = ndx.dimension(dc.pluck('Genre'));
+    var total_runtime_per_genre = runtime_dim.group().reduceSum(dc.pluck('Runtime'));
+
+
+    dc.pieChart('#runtime')
+        .height(330)
+        .radius(90)
+        .transitionDuration(1500)
+        .dimension(runtime_dim)
+        .group(total_runtime_per_genre);
 }
 
 

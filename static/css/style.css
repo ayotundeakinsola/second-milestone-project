@@ -1,0 +1,15 @@
+/* Section Styling*/
+
+.section-heading {
+	margin-bottom: 100px;
+}
+
+.section {
+	border-bottom: 1px solid #e6e6e6;
+	padding: 30px 0;
+}
+
+.section-paragraph {
+	line-height: 1.2;
+}
+

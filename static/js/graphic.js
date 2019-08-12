@@ -1,4 +1,3 @@
-//Stacked Bar Chart 
 queue()
     .defer(d3.csv, "data/imdbs.csv")
     .await(makeGraphs);
@@ -10,12 +9,27 @@ function makeGraphs(error, imdbsData) {
         d.Revenue = parseInt(d.Revenue);
     })
 
-    show_revenue_genre(ndx);
+    show_genre_selector(ndx);
+    show_movie_year(ndx);
 
     dc.renderAll();
 }
 
-function show_revenue_genre(ndx) {
+
+//Genre Selector
+function show_genre_selector(ndx){
+     var dim = ndx.dimension(dc.pluck('Genre'));
+     var group = dim.group();
+     
+      dc.selectMenu("#genre-selector")
+        .dimension(dim)
+        .group(group);
+}
+
+
+
+// Bar Chart 
+function show_movie_year(ndx) {
     var dim = ndx.dimension(dc.pluck('Year'));
 
 
@@ -40,15 +54,15 @@ function show_revenue_genre(ndx) {
         return { count: 0, total: 0 };
     }
 
-    var RevenueByYearperGenre = dim.group().reduce(add_item, remove_item, initialise);
+    var TotalMoviePerYear = dim.group().reduce(add_item, remove_item, initialise);
     
     
-     dc.barChart("#revenue-genre")
-        .width(400)
+     dc.barChart("#movie-year")
+        .width(800)
         .height(300)
         .margins({top: 10, right: 50, bottom: 30, left: 50})
         .dimension(dim)
-        .group(RevenueByYearperGenre)
+        .group(TotalMoviePerYear)
         .valueAccessor(function(d){
             return d.value.count;
         })
@@ -60,3 +74,5 @@ function show_revenue_genre(ndx) {
         .yAxis().ticks(6);   
         
 }
+
+

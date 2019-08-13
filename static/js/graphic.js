@@ -39,7 +39,7 @@ function show_movie_year(ndx) {
 
     dc.barChart("#movie-year")
         .width(800)
-        .height(300)
+        .height(400)
         .margins({ top: 10, right: 50, bottom: 30, left: 50 })
         .dimension(dim)
         .group(group)
@@ -217,7 +217,7 @@ function show_stacked_chart(ndx) {
     var stackedChart = dc.barChart("#stacked-chart");
     stackedChart
         .width(500)
-        .height(500)
+        .height(400)
         .dimension(year_dim)
         .group(RevenueByYearGenreAction, "Action")
         .stack(RevenueByYearGenreAdventure, "Adventure")

@@ -43,7 +43,7 @@ function show_movie_year(ndx) {
         .margins({ top: 10, right: 50, bottom: 30, left: 50 })
         .dimension(dim)
         .group(group)
-        .transitionDuration(500)
+        .transitionDuration(1500)
         .x(d3.scale.ordinal())
         .xUnits(dc.units.ordinal)
         .elasticY(true)

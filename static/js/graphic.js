@@ -48,6 +48,7 @@ function show_movie_year(ndx) {
         .xUnits(dc.units.ordinal)
         .elasticY(true)
         .xAxisLabel("Year")
+        .yAxisLabel("Total")
         .yAxis().ticks(6);
 
 }
@@ -234,6 +235,8 @@ function show_stacked_chart(ndx) {
         .stack(RevenueByYearGenreThriller, "Thriller")
         .x(d3.scale.ordinal())
         .xUnits(dc.units.ordinal)
+        .yAxisLabel("Revenue")
+        .xAxisLabel("Year")
         .legend(dc.legend().x(720).y(0).itemHeight(15).gap(5));
 
     stackedChart.margins().right = 100;

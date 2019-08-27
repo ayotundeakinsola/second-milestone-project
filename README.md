@@ -131,6 +131,9 @@ Runtime repectively.
 
 I used the following webistes to validate both my HTML and CSS files respectively.
 
+Also, I had t check if the filepath in the html file worked properly. In a particular instance my css stylesheet was not properly linked and
+all the changes I ws making were not fully reflected on the html page. I had to write the correct file path for this to be corrected.
+
 * [HTML-Validator](https://validator.w3.org/#validate_by_input "HTML-Validator")
 
 
@@ -260,7 +263,7 @@ The website worked perfectly on other screen sizes and there was no issue with r
 
 #### Bugs
 
-1. The background image in the mobile view is too big. I have tried changing it but there not enough time to find a solution
+1. The labels for the charts are always overlapping the chart itself. I adjusted it in the css file. 
 2. When reduced to mobile view the responsiveness a times doesn't work until when refreshed. I do not know what causes this to happen. 
 
 # Deployment

@@ -1,26 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap: 400,500,600,700');
 
-/* Section Styling*/
 
-.section-heading {
-	margin-bottom: 100px;
+body {
+    font-family: 'Rubik', sans-serif;
 }
 
-.section {
-	border-bottom: 1px solid #e6e6e6;
-	padding-top: 20px;
-	padding-bottom: 75px;
+#logo {
+    height: 50px;
+    width: 90px;
 }
-
-.section-paragraph {
-	line-height: 1.2;
-}
-
-/* Labels*/
-
-text.x-axis-label {
-	line-height: 2.5;
-}
-
-/* Container */
-.container-wrapper {}

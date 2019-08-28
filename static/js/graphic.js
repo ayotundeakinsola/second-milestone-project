@@ -38,7 +38,7 @@ function show_movie_year(ndx) {
     var group = dim.group();
 
     dc.barChart("#movie-year")
-        .width(800)
+        .width(600)
         .height(400)
         .margins({ top: 10, right: 50, bottom: 30, left: 50 })
         .dimension(dim)

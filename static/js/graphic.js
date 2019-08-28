@@ -10,6 +10,7 @@ function makeGraphs(error, imdbsData) {
     })
 
     show_genre_selector(ndx);
+    show_year_selector(ndx);
     show_movie_year(ndx);
     show_ratings_genre(ndx);
     show_stacked_chart(ndx);
@@ -26,6 +27,16 @@ function show_genre_selector(ndx) {
     var group = dim.group();
 
     dc.selectMenu("#genre-selector")
+        .dimension(dim)
+        .group(group);
+}
+
+//Year Selector
+function show_year_selector(ndx) {
+    var dim = ndx.dimension(dc.pluck('Year'));
+    var group = dim.group();
+
+    dc.selectMenu("#year-selector")
         .dimension(dim)
         .group(group);
 }

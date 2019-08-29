@@ -49,8 +49,8 @@ function show_movie_year(ndx) {
     var group = dim.group();
 
     dc.barChart("#movie-year")
-        .width(600)
-        .height(400)
+        .width(500)
+        .height(300)
         .margins({ top: 10, right: 50, bottom: 30, left: 50 })
         .dimension(dim)
         .group(group)
@@ -72,7 +72,7 @@ function show_ratings_genre(ndx) {
 
     dc.pieChart('#rating')
         .height(330)
-        .radius(200)
+        .radius(90)
         .transitionDuration(1500)
         .dimension(rating_dim)
         .group(total_rating_per_genre);
@@ -85,7 +85,7 @@ function show_revenue_genre(ndx) {
 
     dc.pieChart('#revenue')
         .height(330)
-        .radius(200)
+        .radius(90)
         .transitionDuration(1500)
         .dimension(revenue_dim)
         .group(total_revenue_per_genre);
@@ -98,7 +98,7 @@ function show_runtime_genre(ndx) {
 
     dc.pieChart('#runtime')
         .height(330)
-        .radius(200)
+        .radius(90)
         .transitionDuration(1500)
         .dimension(runtime_dim)
         .group(total_runtime_per_genre);
@@ -228,8 +228,8 @@ function show_stacked_chart(ndx) {
 
     var stackedChart = dc.barChart("#stacked-chart");
     stackedChart
-        .width(800)
-        .height(400)
+        .width(500)
+        .height(300)
         .dimension(year_dim)
         .group(RevenueByYearGenreAction, "Action")
         .stack(RevenueByYearGenreAdventure, "Adventure")
@@ -248,9 +248,9 @@ function show_stacked_chart(ndx) {
         .xUnits(dc.units.ordinal)
         .yAxisLabel("Revenue")
         .xAxisLabel("Year")
-        .legend(dc.legend().x(720).y(0).itemHeight(15).gap(5));
+        .legend(dc.legend().x(400).y(0).itemHeight(15).gap(5));
 
-    stackedChart.margins().right = 100;
+    stackedChart.margins().right = 0;
 
 
 }

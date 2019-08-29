@@ -38,58 +38,56 @@
                 <div class="row">
 
                     <div class="col-sm text-center" id="movie-year">
-                        <p class="text-uppercase font-weight-bold " id="blockbuster">Total Blockbuster Movies Per Year</p>
+                        <p class="text-uppercase font-weight-bold ">Total Blockbuster Movies Per Year</p>
                     </div>
 
-                        <div class="col-sm text-center" id="genre-selector">
-                            <p class="font-weight-bold">Genre</p>
-                        </div>
-                        
-                         <div class="col-sm text-center" id="year-selector">
-                            <p class="font-weight-bold">Year</p>
-                        </div>
+                    <div class="col-sm text-center" id="genre-selector">
+                        <p class="font-weight-bold">Genre</p>
+                    </div>
+
+                    <div class="col-sm text-center" id="year-selector">
+                        <p class="font-weight-bold">Year</p>
+                    </div>
                 </div>
             </section>
         </div>
     </div>
 
-    <section class="section ">
-        <div class="container ">
+    <div class="container-wrapper">
+        <div class="content-container">
+            <section class="stackedpie">
+                <div class="row">
 
-            <div class="row ">
-                <div class="col-xs-12 col-sm-12 text-center ">
-                    <p class="section-paragraph ">Revenue By Year Per Genre</p>
+                    <div class="col text-center stacked" id="stacked-chart">
+                        <p class="text-uppercase font-weight-bold ">Revenue By Year Per Genre</p>
+                    </div>
+
+                    <div class="col-6 text-center stacked" id="rating">
+                        <p class="font-weight-bold">Total Ratings Per Genre</p>
+                    </div>
                 </div>
-
-                <div class="col-xs-12 col-sm-12 text-center " id="stacked-chart ">
-
-                </div>
-            </div>
+            </section>
         </div>
-    </section>
+    </div>
 
-    <section class="section ">
-        <div class="container ">
 
-            <div class="row ">
-                <div class="col-xs-12 col-sm-4 text-center ">
-                    <p class="section-paragraph ">Total Revenue Per Genre</p>
-                </div>
-                <div class="col-xs-12 col-sm-4 text-center ">
-                    <p class="section-paragraph ">Total Ratings Per Genre</p>
-                </div>
-                <div class="col-xs-12 col-sm-4 text-center ">
-                    <p class="section-paragraph ">Total Runtime Per Genre</p>
-                </div>
-            </div>
+    <div class="container-wrapper">
+        <div class="content-container">
+            <section class="pie">
+                <div class="row">
 
-            <div class="row ">
-                <div class="col-xs-12 col-sm-4 text-center " id="revenue " class="custom-chart "></div>
-                <div class="col-xs-12 col-sm-4 text-center " id="rating " class="custom-chart "></div>
-                <div class="col-xs-12 col-sm-4 text-center " id="runtime " class="custom-chart "></div>
-            </div>
+                    <div class="col text-center chartpie" id="revenue">
+                        <p class="text-uppercase font-weight-bold">Total Revenue Per Genre</p>
+                    </div>
+
+                    <div class="col text-center chartpie" id="runtime">
+                        <p class="font-weight-bold">Total Runtime Per Genre</p>
+                    </div>
+                </div>
+            </section>
         </div>
-    </section>
+    </div>
+
 
 </body>
 

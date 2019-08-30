@@ -78,19 +78,6 @@ function show_ratings_genre(ndx) {
         .group(total_rating_per_genre);
 }
 
-function show_revenue_genre(ndx) {
-    var revenue_dim = ndx.dimension(dc.pluck('Genre'));
-    var total_revenue_per_genre = revenue_dim.group().reduceSum(dc.pluck('Revenue'));
-
-
-    dc.pieChart('#revenue')
-        .height(330)
-        .radius(90)
-        .transitionDuration(1500)
-        .dimension(revenue_dim)
-        .group(total_revenue_per_genre);
-}
-
 function show_runtime_genre(ndx) {
     var runtime_dim = ndx.dimension(dc.pluck('Genre'));
     var total_runtime_per_genre = runtime_dim.group().reduceSum(dc.pluck('Runtime'));
@@ -254,3 +241,70 @@ function show_stacked_chart(ndx) {
 
 
 }
+
+
+// Line Chart
+
+function show_revenue_genre(ndx) {
+
+    var year_dim = ndx.dimension(dc.pluck('Year'));
+
+
+    function revenue_by_genre(Genre) {
+        return function(d) {
+            if (d.Genre === Genre) {
+                return +d.Revenue;
+            }
+            else {
+                return 0;
+            }
+        }
+    }
+    var ActionRevenueByyear = year_dim.group().reduceSum(revenue_by_genre('Action'));
+
+    var AdventureRevenueByyear = year_dim.group().reduceSum(revenue_by_genre('Adventure'));
+
+    var AnimationRevenueByyear = year_dim.group().reduceSum(revenue_by_genre('Animation'));
+
+    var BiographyRevenueByyear = year_dim.group().reduceSum(revenue_by_genre('Biography'));
+
+    var ComedyRevenueByyear = year_dim.group().reduceSum(revenue_by_genre('Comedy'));
+
+    var DramaRevenueByyear = year_dim.group().reduceSum(revenue_by_genre('Drama'));
+
+    var FantasyRevenueByyear = year_dim.group().reduceSum(revenue_by_genre('Fantasy'));
+
+    var HorrorRevenueByyear = year_dim.group().reduceSum(revenue_by_genre('Horror'));
+
+    var MysteryRevenueByyear = year_dim.group().reduceSum(revenue_by_genre('Mystery'));
+
+    var RomanceRevenueByyear = year_dim.group().reduceSum(revenue_by_genre('Romance'));
+
+    var ScifiRevenueByyear = year_dim.group().reduceSum(revenue_by_genre('Scifi'));
+
+    var ThrillerRevenueByyear = year_dim.group().reduceSum(revenue_by_genre('Thriller'));
+
+
+
+    var compositeChart = dc.compositeChart('#composite-chart');
+    compositeChart
+        .width(990)
+        .height(200)
+        .dimension(year_dim)
+        .x(d3.scale.ordinal())
+        .xUnits(dc.units.ordinal)
+        .yAxisLabel("Revenue")
+        .legend(dc.legend().x(80).y(20).itemHeight(13).gap(5))
+        .renderHorizontalGridLines(true)
+        .compose([
+            dc.lineChart(compositeChart)
+            .colors('#1f77b4')
+            .group(ActionRevenueByyear, 'Action'),
+            dc.lineChart(compositeChart)
+            .colors('red')
+            .group(bobSpendByMonth, 'Bob'),
+            dc.lineChart(compositeChart)
+            .colors('blue')
+            .group(aliceSpendByMonth, 'Alice')
+        ])
+        .brushOn(false)

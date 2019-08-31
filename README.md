@@ -265,6 +265,8 @@ The website worked perfectly on other screen sizes and there was no issue with r
 
 1. The labels for the charts are always overlapping the chart itself. I adjusted it in the css file. 
 2. When reduced to mobile view the responsiveness a times doesn't work until when refreshed. I do not know what causes this to happen. 
+3. When I test the stacked chart alone, data is available for all the years on the x-axis. but when I add other charts and run the 
+crossfilter, some years are missing. I have tried adjusting this but to no avail. My mentor thinks it is because some data are missing. 
 
 # Deployment
 

@@ -5,9 +5,6 @@ queue()
 function makeGraphs(error, imdbsData) {
     var ndx = crossfilter(imdbsData);
 
-    imdbsData.forEach(function(d) {
-        d.Revenue = parseInt(d.Revenue);
-    });
     
     var parseYear = d3.time.format("%Y").parse;
     imdbsData.forEach(function(d) {

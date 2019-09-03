@@ -5,10 +5,14 @@ queue()
 function makeGraphs(error, imdbsData) {
     var ndx = crossfilter(imdbsData);
 
-    
+    imdbsData.forEach(function(d) {
+        d.revenue_parsed = (d.Revenue);
+    });
+
+
     var parseYear = d3.time.format("%Y").parse;
     imdbsData.forEach(function(d) {
-        d.year_parsed  = parseYear(d.Year);
+        d.year_parsed = parseYear(d.Year);
     });
 
     show_genre_selector(ndx);
@@ -248,14 +252,14 @@ function show_stacked_chart(ndx) {
 function show_revenue_genre(ndx) {
 
 
-    var year_dim = ndx.dimension(dc.pluck('year_parsed '));
-    var minYear = year_dim.bottom(1)[0].Year;
-    var maxYear = year_dim.top(1)[0].Year;
+    var year_dim = ndx.dimension(dc.pluck('year_parsed'));
+    var minYear = year_dim.bottom(1)[0].year_parsed;
+    var maxYear = year_dim.top(1)[0].year_parsed;
 
     function revenue_by_genre(Genre) {
         return function(d) {
             if (d.Genre === Genre) {
-                return +d.Revenue;
+                return +d.revenue_parsed;
             }
             else {
                 return 0;

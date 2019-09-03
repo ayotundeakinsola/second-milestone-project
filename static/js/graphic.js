@@ -14,7 +14,6 @@ function makeGraphs(error, imdbsData) {
     show_movie_year(ndx);
     show_ratings_genre(ndx);
     show_stacked_chart(ndx);
-    show_revenue_genre(ndx);
     show_runtime_genre(ndx);
 
     dc.renderAll();
@@ -243,98 +242,3 @@ function show_stacked_chart(ndx) {
 }
 
 
-// Line Chart
-
-function show_revenue_genre(ndx) {
-
-    var year_dim = ndx.dimension(dc.pluck('Year'));
-
-
-    function revenue_by_genre(Genre) {
-        return function(d) {
-            if (d.Genre === Genre) {
-                return +d.Revenue;
-            }
-            else {
-                return 0;
-            }
-        }
-    }
-    var ActionRevenueByyear = year_dim.group().reduceSum(revenue_by_genre('Action'));
-
-    var AdventureRevenueByyear = year_dim.group().reduceSum(revenue_by_genre('Adventure'));
-
-    var AnimationRevenueByyear = year_dim.group().reduceSum(revenue_by_genre('Animation'));
-
-    var BiographyRevenueByyear = year_dim.group().reduceSum(revenue_by_genre('Biography'));
-
-    var ComedyRevenueByyear = year_dim.group().reduceSum(revenue_by_genre('Comedy'));
-
-    var DramaRevenueByyear = year_dim.group().reduceSum(revenue_by_genre('Drama'));
-
-    var FantasyRevenueByyear = year_dim.group().reduceSum(revenue_by_genre('Fantasy'));
-
-    var HorrorRevenueByyear = year_dim.group().reduceSum(revenue_by_genre('Horror'));
-
-    var MysteryRevenueByyear = year_dim.group().reduceSum(revenue_by_genre('Mystery'));
-
-    var RomanceRevenueByyear = year_dim.group().reduceSum(revenue_by_genre('Romance'));
-
-    var ScifiRevenueByyear = year_dim.group().reduceSum(revenue_by_genre('Scifi'));
-
-    var ThrillerRevenueByyear = year_dim.group().reduceSum(revenue_by_genre('Thriller'));
-
-
-
-    var compositeChart = dc.compositeChart('#composite-chart');
-    compositeChart
-        .width(990)
-        .height(200)
-        .dimension(year_dim)
-        .x(d3.scale.ordinal())
-        .xUnits(dc.units.ordinal)
-        .yAxisLabel("Revenue")
-        .legend(dc.legend().x(80).y(20).itemHeight(13).gap(5))
-        .renderHorizontalGridLines(true)
-        .compose([
-            dc.lineChart(compositeChart)
-            .colors('#1f77b4')
-            .group(ActionRevenueByyear, 'Action'),
-            dc.lineChart(compositeChart)
-            .colors('#ff7f0e')
-            .group(AdventureRevenueByyear, 'Adventure'),
-            dc.lineChart(compositeChart)
-            .colors('#2ca02c')
-            .group(AnimationRevenueByyear, 'Animation')
-            dc.lineChart(compositeChart)
-            .colors('#d62728')
-            .group(BiographyRevenueByyear, 'Biography')
-            dc.lineChart(compositeChart)
-            .colors('#9467bd')
-            .group(ComedyRevenueByyear, 'Comedy')
-            dc.lineChart(compositeChart)
-            .colors('#8c564b')
-            .group(CrimeRevenueByyear, 'Crime')
-            dc.lineChart(compositeChart)
-            .colors('#e377c2')
-            .group(DramaRevenueByyear, 'Drama')
-            dc.lineChart(compositeChart)
-            .colors('#7f7f7f')
-            .group(FantasyRevenueByyear, 'Fantasy')
-            dc.lineChart(compositeChart)
-            .colors('#bcbd22')
-            .group(HorrorRevenueByyear, 'Horror')
-            dc.lineChart(compositeChart)
-            .colors('#17becf')
-            .group(MysteryRevenueByyear, 'Mystery')
-            dc.lineChart(compositeChart)
-            .colors('#1f77b4')
-            .group(RomanceRevenueByyear, 'Romance')
-            dc.lineChart(compositeChart)
-            .colors('#ff7f0e')
-            .group(ScifiRevenueByyear, 'Scifi')
-            dc.lineChart(compositeChart)
-            .colors('#2ca02c')
-            .group(ThrillerRevenueByyear, 'Thriller')
-        ])
-        .brushOn(false)

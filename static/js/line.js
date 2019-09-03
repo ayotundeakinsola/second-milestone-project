@@ -26,13 +26,15 @@ function makeGraphs(error, imdbsData) {
     }
     var ActionRevenueByYear = year_dim.group().reduceSum(revenue_by_genre('Action'));
 
-    var AdventureRevenueByyear = year_dim.group().reduceSum(revenue_by_genre('Adventure'));
+    var AdventureRevenueByYear = year_dim.group().reduceSum(revenue_by_genre('Adventure'));
 
     var AnimationRevenueByYear = year_dim.group().reduceSum(revenue_by_genre('Animation'));
 
     var BiographyRevenueByYear = year_dim.group().reduceSum(revenue_by_genre('Biography'));
 
     var ComedyRevenueByYear = year_dim.group().reduceSum(revenue_by_genre('Comedy'));
+    
+    var CrimeRevenueByYear = year_dim.group().reduceSum(revenue_by_genre('Crime'));
 
     var DramaRevenueByYear = year_dim.group().reduceSum(revenue_by_genre('Drama'));
 
@@ -66,34 +68,34 @@ function makeGraphs(error, imdbsData) {
             .group(AdventureRevenueByYear, 'Adventure'),
             dc.lineChart(compositeChart)
             .colors('#2ca02c')
-            .group(AnimationRevenueByYear, 'Animation')
+            .group(AnimationRevenueByYear, 'Animation'),
             dc.lineChart(compositeChart)
             .colors('#d62728')
-            .group(BiographyRevenueByYear, 'Biography')
+            .group(BiographyRevenueByYear, 'Biography'),
             dc.lineChart(compositeChart)
             .colors('#9467bd')
-            .group(ComedyRevenueByYear, 'Comedy')
+            .group(ComedyRevenueByYear, 'Comedy'),
             dc.lineChart(compositeChart)
             .colors('#8c564b')
-            .group(CrimeRevenueByYear, 'Crime')
+            .group(CrimeRevenueByYear, 'Crime'),
             dc.lineChart(compositeChart)
             .colors('#e377c2')
-            .group(DramaRevenueByYear, 'Drama')
+            .group(DramaRevenueByYear, 'Drama'),
             dc.lineChart(compositeChart)
             .colors('#7f7f7f')
-            .group(FantasyRevenueByYear, 'Fantasy')
+            .group(FantasyRevenueByYear, 'Fantasy'),
             dc.lineChart(compositeChart)
             .colors('#bcbd22')
-            .group(HorrorRevenueByYear, 'Horror')
+            .group(HorrorRevenueByYear, 'Horror'),
             dc.lineChart(compositeChart)
             .colors('#17becf')
-            .group(MysteryRevenueByYear, 'Mystery')
+            .group(MysteryRevenueByYear, 'Mystery'),
             dc.lineChart(compositeChart)
             .colors('#1f77b4')
-            .group(RomanceRevenueByYear, 'Romance')
+            .group(RomanceRevenueByYear, 'Romance'),
             dc.lineChart(compositeChart)
             .colors('#ff7f0e')
-            .group(ScifiRevenueByYear, 'Scifi')
+            .group(ScifiRevenueByYear, 'Scifi'),
             dc.lineChart(compositeChart)
             .colors('#2ca02c')
             .group(ThrillerRevenueByYear, 'Thriller')

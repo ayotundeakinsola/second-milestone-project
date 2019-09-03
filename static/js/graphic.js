@@ -7,7 +7,12 @@ function makeGraphs(error, imdbsData) {
 
     imdbsData.forEach(function(d) {
         d.Revenue = parseInt(d.Revenue);
-    })
+    });
+    
+    var parseYear = d3.time.format("%Y").parse;
+    imdbsData.forEach(function(d) {
+        d.Year = parseYear(d.Year);
+    });
 
     show_genre_selector(ndx);
     show_year_selector(ndx);
@@ -245,10 +250,7 @@ function show_stacked_chart(ndx) {
 
 function show_revenue_genre(ndx) {
 
-    var parseYear = d3.time.format("%Y").parse;
-    imdbsData.forEach(function(d) {
-        d.Year = parseYear(d.Year);
-    });
+
     var year_dim = ndx.dimension(dc.pluck('Year'));
     var minYear = year_dim.bottom(1)[0].Year;
     var maxYear = year_dim.top(1)[0].Year;

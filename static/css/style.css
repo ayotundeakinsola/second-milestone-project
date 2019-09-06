@@ -22,8 +22,9 @@ body {
     clear: both;
 }
 
-.chartpie {
-    float: left;
-    width: 50%;
-    padding: 10px;
+
+/* Legend */
+
+g.dc-legend {
+    float: right;
 }

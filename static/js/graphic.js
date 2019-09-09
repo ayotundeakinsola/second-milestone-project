@@ -295,14 +295,14 @@ function show_revenue_genre(ndx) {
 
     var compositeChart = dc.compositeChart('#composite-chart');
     compositeChart
-        .width(900)
-        .height(200)
+        .width(600)
+        .height(300)
         .margins({ top: 10, right: 50, bottom: 40, left: 50 })
         .dimension(year_dim)
         .x(d3.time.scale().domain([minYear, maxYear]))
         .xAxisLabel("Year")
         .yAxisLabel("Revenue")
-        .legend(dc.legend().x(800).y(0).itemHeight(15).gap(5))
+        .legend(dc.legend().x(500).y(0).itemHeight(10).gap(5))
         .renderHorizontalGridLines(true)
         .compose([
             dc.lineChart(compositeChart)
@@ -346,5 +346,5 @@ function show_revenue_genre(ndx) {
             .group(ThrillerRevenueByYear, 'Thriller')
         ])
         .brushOn(false)
-        dc.renderAll();
+     compositeChart.margins().right = 150;
 }

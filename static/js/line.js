@@ -101,5 +101,5 @@ function makeGraphs(error, imdbsData) {
             .group(ThrillerRevenueByYear, 'Thriller')
         ])
         .brushOn(false)
-        .render();
+    compositeChart.margins().right = 200;
 }

@@ -242,7 +242,7 @@ function show_stacked_chart(ndx) {
         .xUnits(dc.units.ordinal)
         .yAxisLabel("Revenue (millions)")
         .xAxisLabel("Year")
-        .legend(dc.legend().x(420).y(0).itemHeight(15).gap(5));
+        .legend(dc.legend().x(420).y(0).itemHeight(10).gap(5));
 
     stackedChart.margins().right = 200;
 

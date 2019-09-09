@@ -25,6 +25,7 @@ body {
 
 /* Legend */
 
-g.dc-legend {
-    float: right;
+.dc-legend {
+    font-size: 11px;
+
 }

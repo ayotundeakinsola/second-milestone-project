@@ -8,8 +8,7 @@ body {
 /* Background Image */
 
 body {
-    background: url('../static/images/background.jpeg') center center cover no-repeat fixed;
-    background-color: #464646;
+    background: url('../images/background.jpeg') center center cover no-repeat fixed; 
     height: 100%;
     width: 100%;
 }
@@ -19,6 +18,11 @@ body {
 #logo {
     height: 50px;
     width: 90px;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    color: black;
 }
 
 .stacked {
@@ -39,4 +43,11 @@ body {
 .dc-legend {
     font-size: 11px;
 
+}
+/* Media Queries */
+
+@media only screen and (max-width: 767px) {
+  body {
+    background-image: url('../images/background.jpeg');
+  }
 }

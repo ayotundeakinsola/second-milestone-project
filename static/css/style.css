@@ -20,11 +20,20 @@ body {
     width: 90px;
 }
 
+
+.navbar {
+    padding-bottom: 50px;
+    width: 100%;
+    
+}
+
 .navbar-brand {
     font-size: 2rem;
     color: black;
 }
 
+
+/* Stacked Bar Chart */
 .stacked {
     float: left;
     width: 50%;

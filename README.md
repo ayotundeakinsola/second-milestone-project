@@ -132,17 +132,22 @@ Runtime repectively.
 
 I used the following webistes to validate both my HTML and CSS files respectively.
 
-Also, I had t0 check if the filepath in the html file worked properly. In a particular instance my css stylesheet was not properly linked and
+Also, I had to check if the filepath in the html file worked properly. In a particular instance my css stylesheet was not properly linked and
 all the changes I was making were not fully reflected on the html page. I had to write the correct file path for this to be corrected.
 
 * [HTML-Validator](https://validator.w3.org/#validate_by_input "HTML-Validator")
 
-The HTML validation service  helps check the validity of Web documents. When I used this service, it only brought out error messages for the form 
-in the contact section. I have tried correcting the bugs but it doesn't seem to work. On the front end, the codes for the forms seems to be working
-very fine but on the other hand, the code seems to be working fine. Perhaps in future testing, I would find a way to solve it. 
+The HTML validation service  helps check the validity of Web documents. When I used this service, it showed me errors about the section headers
+which didn't have a corresponding heading tags. 
 
-Also, the CSS validation service helps check Cascading Style Sheets (CSS). When I used this service, it reported no error. The testing went well and
+* [CSS-Validator](http://www.css-validator.org/ "CSS-Validator")
+
+The CSS validation service helps check Cascading Style Sheets (CSS). When I used this service, it reported no error. The testing went well and
 I am fully confident in the style sheet.
+
+* [JSHint](https://jshint.com/ "JSHint")
+
+I used JSHint to detect errors in my graph.js There were no errors found. 
 
 
 ### Testing user stories from the UX section 

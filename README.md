@@ -3,14 +3,14 @@
 The IMDB dashboard is a data set of 1,000 most popular movies on IMDB in the time period between the years 2006 - 2016. The data set contains
 blockbuster movies such as The Guardians of galaxy Vol.1, La La Land, Fantastic Beasts and Where to Find Them, 	Deadpool and so much more! 
 
-The data fields included in this data set are: Title, Genre, Description, Director, Actors, Year, Runtime, Rating, Votes, Revenue, Metascrore
+The data fields included in this data set are: Title, Genre, Description, Director, Actors, Year, Runtime, Rating, Votes, Revenue, Metascrore. 
 
 
 
 # UX
 
 
-##### The dashboard is for: 
+##### The IMDB dashboard is for: 
 
 * Movie fans
 * Film critics
@@ -18,17 +18,20 @@ The data fields included in this data set are: Title, Genre, Description, Direct
 * Curators
 * Investors
 
-##### Why would a user use the dashboard:
+##### Why would a user use the IMDB dashboard:
 
-* Movie fans can check the ratings of their favorite movie
-* Check for recommended movies as a result of ratings
-* Check what critics say about a movie
+* A user can check the ratings of their favorite movie.
+* A user can check which genre makes the most revenue.
+* A user can compare ratings/gross of movies.
+* A user can track multiple data sources using the charts.
+* It meets specific needs of users interested in certain aspects of blockbuster movies such as revenue, genre, rating, year of production.
 
-##### How does my dashboard help clients/users? 
+##### How does the IMDB dashboard help clients/users? 
 
-* It provides a catalogue of movies between the period 2006 - 2016
-* The dashboard provides fans with ratings for movies
-* The dashboard also serves as a guide on movie selection as a result of the movie critics and ratings
+* It provides a catalogue of movies between the period 2006 - 2016.
+* The dashboard provides fans with ratings for movies.
+* The dashboard serves as an information management tool that helps to visually track revenue of blockbuster movies. 
+* The dashboard informs the users the average runtime of movies they watch. 
 
 #### Wireframe
 You can find the link to the wireframe here: 

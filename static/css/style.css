@@ -22,7 +22,7 @@ body {
 
 
 .navbar {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     width: 100%;
     
 }
@@ -59,4 +59,10 @@ body {
   body {
     background-image: url('../images/background.jpeg');
   }
+}
+
+/*---Container----*/
+
+.content-container {
+    padding-top: 20px;
 }

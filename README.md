@@ -34,41 +34,39 @@ The data fields included in this data set are: Title, Genre, Description, Direct
 * The dashboard informs the users the average runtime of movies they watch. 
 
 #### Wireframe
+
 You can find the link to the wireframe here: 
 [Wireframe](https://1drv.ms/w/s!AqARRU4jO5elrXUeXA6XbMjqSlMW?e=rWxEYi "Wireframe")
+
+I also got inspiraion for the dashboard from these websites:
+
+* [Canvasjs](https://canvasjs.com/samples/dashboards/ "Canvasjs")
+* [Keen](https://keen.io/docs/visualize/how-to-create-a-dashboard/ "Keen")
+* [CodeWall](https://www.codewall.co.uk/best-dashboard-examples-for-inspiration/ "CodeWall")
+
+
 
 ### User Stories
 
 #### From the Fans perspective: 
 
-* As a fan, I want to get an in-depth review from critics and fellow fans on movies released.
-
 * As as a fan, I want to know the revenue a movie generated.
-
-* As a fan, I am interested in knowing the name of the actors in the movie.  
-
 * As a fan, I would like to know what year the movie was released.
-
-* As a fan, I would like to know the director of my movie selection. 
-
 * As a fan, I am interested in the length of the movie.  
 
 #### From the Film critics/publication/curator perspective: 
 
 * As a film critic,  I would love to give goodd recommendation to the fans.
-
 * As a film critic, I am interested in the runtime of the movie.
-
 * As a film critic, I am interested in the number of user votes for movies.
-
 * As a publication, I am interested in the metascore of critics.
- 
 * As a curator, I am intersted in the movie rating. 
 
 #### From the Film investor perspective: 
 
-* As an investor, I am interested in knowing which genre is most profitable and which genres cost less to produce 
-
+* As an investor, I am interested in knowing which genre is most profitable and which genres cost less to produce. 
+* As an invesor, I am interested in the revenue of movies.
+* As an investor, I am interested in how many movies are produced each year.
 
 
 # Features
@@ -91,8 +89,8 @@ The dataset used in this project is explained in the table below:
 | Metascore          | An aggregated average of critic scores. Values are between 0 and 100. Higher scores represent positive reviews.  | Numeric             | 
 
 
-
 ### Features Left to Implement
+
 In the future:
  
 * The nature of the database made it difficult to classify movies. Movies do not distinctly belong to one genre. A movie like "Guardian of Galaxy" 
@@ -100,10 +98,10 @@ isn't just Action; it is classified under other genres such as Adventure & Sci-F
 to get data about some movies in a particular genre. 
 Perhaps movie boards can make movie classification more cleare for data users. 
 
-
 * Because of the scale of the project, I used a small database. For future references I would like to have information on plot, 
   budget per movie and cost to make the movie, how many months for movie production, salary per actor, most watched movies. 
 
+* In future projects, I would like to create more graphs to visually track other indicators not shown in this dahboard. 
 
 
 # Technologies Used
@@ -119,13 +117,13 @@ Perhaps movie boards can make movie classification more cleare for data users.
 | Tables Generator   | [Tables Generator](https://www.tablesgenerator.com/ "Tables Generator")                                                                                                                                              |  I used this website to generate tables for my README.md file.                                                          |
 | Crossfilter        | [Crossfilter](https://www.tablesgenerator.com/ "Crossfilter")                                                                                                                                                        |  I used this library to explore my large dataset                                                                        |
 | Chartjs            | [chartjs](https://www.chartjs.org/ "chartjs")                                                                                                                                                                        |  I used this library to customise my charts                                                                             |
-
-
+| d3.js              | [d3.js](https://d3js.org/ "d3.js")                                                                                                                                                                                   |  D3.js is a JavaScript library for producing dynamic, interactive data visualizations in web browsers.                  |
+| dc.js              | [dc.js](https://dc-js.github.io/dc.js/ "dc.js")                                                                                                                                                                      |  dc.js is a multi-dimensional charting library built to work natively with crossfilter and rendered using d3.js.        |
 
 
 # Testing
 
-First I had to test if the data I downloaded (imdb.csv) was okay. I opened the graph.js file to run some commands and thereafter,
+First I had to test if the data downloaded (imdb.csv) from kaggle.com was okay. I opened the graph.js file to run some commands and thereafter,
 I inspected the developers tool of the index.html file to see if the Array appeared in the console. Fortunately, it did and the data is actually
 good to use. 
 
@@ -134,11 +132,10 @@ Runtime repectively.
 
 I used the following webistes to validate both my HTML and CSS files respectively.
 
-Also, I had t check if the filepath in the html file worked properly. In a particular instance my css stylesheet was not properly linked and
-all the changes I ws making were not fully reflected on the html page. I had to write the correct file path for this to be corrected.
+Also, I had t0 check if the filepath in the html file worked properly. In a particular instance my css stylesheet was not properly linked and
+all the changes I was making were not fully reflected on the html page. I had to write the correct file path for this to be corrected.
 
 * [HTML-Validator](https://validator.w3.org/#validate_by_input "HTML-Validator")
-
 
 The HTML validation service  helps check the validity of Web documents. When I used this service, it only brought out error messages for the form 
 in the contact section. I have tried correcting the bugs but it doesn't seem to work. On the front end, the codes for the forms seems to be working

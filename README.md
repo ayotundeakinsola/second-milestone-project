@@ -183,69 +183,130 @@ I used JSHint to detect errors in my graph.js There were no errors found.
 #####  Home Page:
 
 1. Bar Chart 
-              1. Go to the Home Page from a desktop.
-              2. Inspect all links, icons, background and content in the navigation menu to ensure they are appearing correctly on the page.
-              3. Move the cusor to the top-right section of the navigation bar, hover over each link and verify that the hover affects are working (i.e. background color changes to brown, font color to #964433).
-              4. Change the screen size to mobile view to ensure that the navigation bar is responsive and all the in line links are packed into the toggler icon.
-              5. Check that the toggler icon is properly styled and at the right position.
-              6. To test the smooth scroll and also to verify that the links are working do the following:
-                    1. Click on "Home" link and verify that it stays on the Home page
-                    2. Click on "services" link and verify that it scrolls smoothly to the services section.
-                    3. Click on "portfolio" link and verify that it scrolls smoothly to the portfolio section.
-                    4. Click on "about" link and verify that it scrolls smoothly to the about section.
-                    5. Click on "prices" link and verify that it scrolls smoothly to the prices section.
-                    6. Click on "contact" link and verify that it scrolls smoothly to the contact section.
-                    7. Repeat this same steps on a mobile view
+                a. Go to the Home Page from a desktop.
+              
+                b. Inspect all the years on the chart and ensure they are appearing correctly on the page.
+              
+                c. Move the cusor and hover over each bar and verify that the hover affects are working (i.e. the bars are responsive).
+              
+                d. Check that the labels of the bar chart and ensure that the labels are properly spaced. 
+              
+                e. Click on the bar chart and ensure it is responsive.
+                
+                f. Check the heading is bold and centrally alligned in the container.
+                
+                g. Check the padding of the Heading. 
+                
+                h. Repeat this same steps on a mobile view.
 
-2. Services section
-              1. Scroll down to the services section or click on the services link in the navigation bar on a desktop view.
-              2. check the services heading is bold and centrally alligned in the container
-              3. Inspect the icons are properly placed within their columns and they are centrally alligned.
-              4. Check that the text under the icon is properly placed.
-              5. Ensure that the icons section occupies the full width of the container and not the services container.
-              6. Check the padding of the Heading
-              7. Repeat this same steps on a mobile view
+                    
 
-3. Portfolio section
-              1. Scroll down to the portfolio section or click on the services link in the navigation bar on a desktop view.
-              2. check the portfolio heading is bold and centrally alligned in the container
-              3. check the images are properly placed within their columns and they are properly alligned.
-              4. Check the padding of the images
-              5. Repeat this same steps on a mobile view
+2. Genre Selector
+               a. Go to the Home Page from a desktop.
+              
+                b. Inspect all the Genres in the dropdown menu and ensure they are appearing correctly on the page.
+              
+                c. Move the cusor and hover over each bar and verify that the hover affects are working (i.e. the bars are responsive).
+              
+                d. Check that the description of each genre is correct. 
+              
+                e. Click on any genre and ensure it is responsive.
+                
+                f. Check the heading is bold and centrally alligned in the container.
+                
+                g. Check the padding of the Heading. 
+                
+                h. Repeat this same steps on a mobile view.
 
-4. About section
-              1. Scroll down to the about section or click on the about link in the navigation bar on a desktop view.
-              2. check the about heading is bold and centrally alligned in the container
-              3. check that the content in the about section are alligned properly
-              4. Check the padding of the images
-              5. Repeat this same steps on a mobile view
 
-5. Prices section
-              1. Scroll down to the prices section or click on the prices link in the navigation bar on a desktop view.
-              2. check the prices heading is bold and centrally alligned in the container
-              3. check that the table in the prices section is is in line with the theme of the website.
-              4. Repeat this same steps on a mobile view
+3. Year Selector
+               a. Go to the Home Page from a desktop.
+              
+                b. Inspect all the Years in the dropdown menu and ensure they are appearing correctly on the page.
+              
+                c. Move the cusor and hover over each bar and verify that the hover affects are working (i.e. the bars are responsive).
+              
+                d. Check that the description of each year is correct. 
+              
+                e. Click on any year and ensure it is responsive.
+                
+                f. Check the heading is bold and centrally alligned in the container.
+                
+                g. Check the padding of the Heading. 
+                
+                h. Repeat this same steps on a mobile view.
 
-6. Reviews section
-              1. Scroll down to the reviews section or click on the reviews link in the navigation bar on a desktop view.
-              2. check the reviews heading is bold and centrally alligned in the container
-              3. check that the content in the about section are alligned properly
-              4. Repeat this same steps on a mobile view
-7. Contact section
-              1. Scroll down to the contact section or click on the contact link in the navigation bar on a desktop view.
-              2. check the contact heading is bold and centrally alligned in the container
-              3. Try to submit the empty form and verify that an error message about the required fields appears
-              4. Try to submit the form with an invalid email address and verify that a relevant error message appears
-              5. Repeat this same steps on a mobile view
 
-8. Footer
-              1. Scroll down to the footer section.
-              2. check that the background color is in line with the theme of the website
-              3. check that the content in the about section are alligned properly
-              4. Check the padding of the of the contents
-              5. Repeat this same steps on a mobile view
+4. Stacked Bar Chart 
+                a. Scroll down to the Stacked Bar Chart.
+              
+                b. Inspect all the years on the chart and ensure they are appearing correctly on the page.
+                
+                c. Inspect the legend and hover over each of the genres to see it is responsive. 
+              
+                d. Move the cusor and hover over each bar and verify that the hover affects are working (i.e. the bars are responsive).
+              
+                e. Check that the labels of the bar chart and ensure that the labels are properly spaced. 
+              
+                f. Click on the stacked bar chart and ensure it is responsive.
+                
+                g. Check the heading is bold and centrally alligned in the container.
+                
+                h. Check the padding of the Heading. 
+                
+                i. Repeat this same steps on a mobile view.
 
-The website worked perfectly on other screen sizes and there was no issue with responsiveness.
+5. Pie Chart (Average Ratings per Genre)
+                a. Scroll down to the Pie Chart (Average Ratings per Genre).
+              
+                b. Inspect all the pies on the chart and ensure they are appearing correctly on the page.
+                
+                c. Move the cusor and hover over each pie and verify that the hover affects are working (i.e. the pies are responsive).
+              
+                d. Click on the pie chart and ensure it is responsive.
+                
+                e. Check the heading is bold and centrally alligned in the container.
+            
+                f. Check the padding of the Heading. 
+                
+                g. Repeat this same steps on a mobile view.
+
+6. Composite Chart 
+                a. Scroll down to the Composite Chart (line chart).
+              
+                b. Inspect all the years on the chart and ensure they are appearing correctly on the page.
+                
+                c. Inspect the legend and hover over each of the genres to see it is responsive. 
+              
+                d. Move the cusor and hover over each line and verify that the hover affects are working (i.e. the lines are responsive).
+              
+                e. Check that the labels of the bar chart and ensure that the labels are properly spaced. 
+              
+                f. Click on the composite chart and ensure it is responsive.
+                
+                g. Check the heading is bold and centrally alligned in the container.
+                
+                h. Check the padding of the Heading. 
+                
+                i. Repeat this same steps on a mobile view.
+
+7. Pie Chart (Average Runtime Per Genre)
+                a. Scroll down to the Pie Chart (Average Runtime Per Genre).
+              
+                b. Inspect all the pies on the chart and ensure they are appearing correctly on the page.
+                
+                c. Move the cusor and hover over each pie and verify that the hover affects are working (i.e. the pies are responsive).
+              
+                d. Click on the pie chart and ensure it is responsive.
+                
+                e. Check the heading is bold and centrally alligned in the container.
+            
+                f. Check the padding of the Heading. 
+                
+                g. Repeat this same steps on a mobile view.
+
+
+The dashboard worked perfectly on other screen sizes and there was no issue with responsiveness.
 
 #### Bugs
 

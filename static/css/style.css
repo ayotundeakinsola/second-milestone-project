@@ -9,7 +9,7 @@ body {
 /* Background Image */
 
 body {
-    background: url('../images/background.jpeg') center center cover no-repeat fixed; 
+    background-image: url('../images/background.jpeg') center center cover no-repeat fixed; 
     height: 100%;
     width: 100%;
 }

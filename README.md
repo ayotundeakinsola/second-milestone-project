@@ -359,23 +359,23 @@ crossfilter, some years are missing. I have tried adjusting this but to no avail
 
 
 
-
 # Credits
 
-### Content
-* The text in the About section was provided by the Makeup Arstist.
-
-* The text in the price section was gotten from: [judyartofmakeup](http://www.judyartofmakeup.nl/nl/ "judyartofmakeup")
-
-
 ### Media
-* The image in the home section was provided by the make up artist. 
 
-* The makeup icon in the services section was made by Surang from: [Flaticon](www.flaticon.com "Flaticon")
+* The background image for the dashboard was gotten from: [wallpaperplay](https://wallpaperplay.com/board/filmmaking-wallpapers "wallpaperplay")
 
+* The dataset is gotten from Kaggle website: [Kaggle](https://www.kaggle.com/PromptCloudHQ/imdb-data "Kaggle")
 
 
 # Acknowledgements
-* The dataset is gotten from Kaggle website: [Kaggle](https://www.kaggle.com/PromptCloudHQ/imdb-data "Kaggle")
+I would first like to thank the Lord almighty for giving me the grace to finish this project. 
+
+Secondly I would like to thank my fiancée for her contributions. She advised me on the background image and also position of the charts
+
+Thirdly, I would like to thank my parents for their support.
+
+Next, special thanks to Haley in the tutor team for guiding me thriugh this project. Many Thanks.
+
 
 

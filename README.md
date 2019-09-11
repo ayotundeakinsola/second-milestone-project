@@ -341,7 +341,7 @@ crossfilter, some years are missing. I have tried adjusting this but to no avail
 ### How to deploy the  GitHub Pages from its GitHub repository
 
 1. Log into GitHub.
-2. Select the repository related to this project: ayotundeakinsola/first-milestone-project.
+2. Select the repository related to this project: ayotundeakinsola/second-milestone-project.
 3. In the menu click on settings and scroll down to the GitHub Pages section.
 4. From the "Source" dropdown menu, select "Master Branch" and click "Save" 
 5. A pop-up message "Your site is ready to be published at https://username.github.io/Bootstrap/" will appear under Github Pages
@@ -375,7 +375,7 @@ Secondly I would like to thank my fiancée for her contributions. She advised me
 
 Thirdly, I would like to thank my parents for their support.
 
-Next, special thanks to Haley in the tutor team for guiding me thriugh this project. Many Thanks.
+Next, special thanks to Haley in the tutor team for guiding me through this project. Many Thanks.
 
 
 

@@ -301,7 +301,7 @@ function show_revenue_genre(ndx) {
         .dimension(year_dim)
         .x(d3.time.scale().domain([minYear, maxYear]))
         .xAxisLabel("Year")
-        .yAxisLabel("Revenue")
+        .yAxisLabel("Revenue (millions)")
         .legend(dc.legend().x(500).y(0).itemHeight(10).gap(5))
         .renderHorizontalGridLines(true)
         .compose([

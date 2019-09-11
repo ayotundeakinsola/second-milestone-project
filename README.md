@@ -149,32 +149,46 @@ I used JSHint to detect errors in my graph.js There were no errors found.
 ### Testing user stories from the UX section 
 
 1.  As as a movie fan, I want to know the average revenue a movie genre generated.
-              1. When the movie fan arives on the dashboard, he/she can see several charts on the page.
-              2. Within the page, the movie fan can scroll down to the stacked bar chart or the composite chart.
+              
+                a. When the movie fan arives on the dashboard, he/she can see several charts on the page.
+              
+                b. Within the page, the movie fan can scroll down to the stacked bar chart or the composite chart.
 
 2. As as a movie fan, I would like to know the number of movies released per year.
-              1. When the movie fan arives on the dashboard, he/she can see several charts on the page.
-              2. The movie fan can then click on the year selector which provides the information.
+              
+                a. When the movie fan arives on the dashboard, he/she can see several charts on the page.
+              
+                b. The movie fan can then click on the year selector which provides the information.
 
 3. As a movie fan, I am interested in the average length of movie genre. 
-              1. When the movie fan arives on the dashboard, he/she can see several charts on the page.
-              2. Within the page, the movie fan can scroll down to the pie chart (Average runtime oer Genre).
+              
+                a. When the movie fan arives on the dashboard, he/she can see several charts on the page.
+              
+                b. Within the page, the movie fan can scroll down to the pie chart (Average runtime oer Genre).
               
 4. As a film critic, I am interested in the average runtime of the movie.
-              1. When the movie fan arives on the dashboard, he/she can see several charts on the page.
-              2. Within the page, the film critic can scroll down to the pie chart (Average runtime oer Genre). 
+              
+                a. When the movie fan arives on the dashboard, he/she can see several charts on the page.
+              
+                b. Within the page, the film critic can scroll down to the pie chart (Average runtime oer Genre). 
 
 5. As a curator, I am intersted in the average movie genre rating. 
-              1. When the curator arives on the dashboard, he/she can see several charts on the page.
-              2. Within the page, the curator can scroll down to the pie chart (Average ratings per Genre).
+              
+                a. When the curator arives on the dashboard, he/she can see several charts on the page.
+              
+                b. Within the page, the curator can scroll down to the pie chart (Average ratings per Genre).
             
 6. As an investor, I am interested in knowing which genre is most profitable. 
-              1. When the investor arives on the dashboard, he/she can see several charts on the page.
-              2. Within the page, the investor can scroll down to the stacked bar chart (Revenue by Year per Genre).
+              
+                a. When the investor arives on the dashboard, he/she can see several charts on the page.
+              
+                b. Within the page, the investor can scroll down to the stacked bar chart (Revenue by Year per Genre).
 
 7. As an investor, I am interested in how many movies are produced each year.
-              1. When the investor arives on the dashboard, he/she can see several charts on the page.
-              2. The investor can then click on the year selector which provides the number of blockbuster movies produced each year.
+                
+                a. When the investor arives on the dashboard, he/she can see several charts on the page.
+              
+                b. The investor can then click on the year selector which provides the number of blockbuster movies produced each year.
 
 
 
@@ -183,6 +197,7 @@ I used JSHint to detect errors in my graph.js There were no errors found.
 #####  Home Page:
 
 1. Bar Chart 
+                
                 a. Go to the Home Page from a desktop.
               
                 b. Inspect all the years on the chart and ensure they are appearing correctly on the page.
@@ -202,7 +217,8 @@ I used JSHint to detect errors in my graph.js There were no errors found.
                     
 
 2. Genre Selector
-               a. Go to the Home Page from a desktop.
+               
+                a. Go to the Home Page from a desktop.
               
                 b. Inspect all the Genres in the dropdown menu and ensure they are appearing correctly on the page.
               
@@ -220,7 +236,8 @@ I used JSHint to detect errors in my graph.js There were no errors found.
 
 
 3. Year Selector
-               a. Go to the Home Page from a desktop.
+               
+                a. Go to the Home Page from a desktop.
               
                 b. Inspect all the Years in the dropdown menu and ensure they are appearing correctly on the page.
               
@@ -238,6 +255,7 @@ I used JSHint to detect errors in my graph.js There were no errors found.
 
 
 4. Stacked Bar Chart 
+                
                 a. Scroll down to the Stacked Bar Chart.
               
                 b. Inspect all the years on the chart and ensure they are appearing correctly on the page.
@@ -257,6 +275,7 @@ I used JSHint to detect errors in my graph.js There were no errors found.
                 i. Repeat this same steps on a mobile view.
 
 5. Pie Chart (Average Ratings per Genre)
+                
                 a. Scroll down to the Pie Chart (Average Ratings per Genre).
               
                 b. Inspect all the pies on the chart and ensure they are appearing correctly on the page.
@@ -272,6 +291,7 @@ I used JSHint to detect errors in my graph.js There were no errors found.
                 g. Repeat this same steps on a mobile view.
 
 6. Composite Chart 
+                
                 a. Scroll down to the Composite Chart (line chart).
               
                 b. Inspect all the years on the chart and ensure they are appearing correctly on the page.
@@ -291,6 +311,7 @@ I used JSHint to detect errors in my graph.js There were no errors found.
                 i. Repeat this same steps on a mobile view.
 
 7. Pie Chart (Average Runtime Per Genre)
+                
                 a. Scroll down to the Pie Chart (Average Runtime Per Genre).
               
                 b. Inspect all the pies on the chart and ensure they are appearing correctly on the page.

@@ -50,22 +50,18 @@ I also got inspiraion for the dashboard from these websites:
 
 #### From the Fans perspective: 
 
-* As as a fan, I want to know the revenue a movie generated.
-* As a fan, I would like to know what year the movie was released.
-* As a fan, I am interested in the length of the movie.  
+* As as a movie fan, I want to know the revenue a movie generated.
+* As as a movie fan, I would like to know the number of movies released per year.
+* As a movie fan, I am interested in the average length of movie genre.  
 
 #### From the Film critics/publication/curator perspective: 
 
-* As a film critic,  I would love to give goodd recommendation to the fans.
-* As a film critic, I am interested in the runtime of the movie.
-* As a film critic, I am interested in the number of user votes for movies.
-* As a publication, I am interested in the metascore of critics.
-* As a curator, I am intersted in the movie rating. 
+* As a film critic, I am interested in the average runtime of the movie.
+* As a curator, I am intersted in the average movie genre rating. 
 
 #### From the Film investor perspective: 
 
-* As an investor, I am interested in knowing which genre is most profitable and which genres cost less to produce. 
-* As an invesor, I am interested in the revenue of movies.
+* As an investor, I am interested in knowing which genre is most profitable. 
 * As an investor, I am interested in how many movies are produced each year.
 
 
@@ -152,56 +148,41 @@ I used JSHint to detect errors in my graph.js There were no errors found.
 
 ### Testing user stories from the UX section 
 
-1. As a customer I want to be able to view a selection of various make up services.
-              1. When the customer arives on the webpage, he/she can see the navigation bar with several links.
-              2. Within the navigation link you can click on the services link and it will smoothly scrool to the services section on the page.
+1.  As as a movie fan, I want to know the average revenue a movie genre generated.
+              1. When the movie fan arives on the dashboard, he/she can see several charts on the page.
+              2. Within the page, the movie fan can scroll down to the stacked bar chart or the composite chart.
 
-2. As as customer I would want to contact the makeup artist.
-              1. When the customer arives on the webpage, he/she can see the navigation bar with several links.
-              2.  Within the navigation link you can click on the contact link and it will smoothly scrool to the contact section on the page.
-              3.  The customer can fill the form and submit it. 
+2. As as a movie fan, I would like to know the number of movies released per year.
+              1. When the movie fan arives on the dashboard, he/she can see several charts on the page.
+              2. The movie fan can then click on the year selector which provides the information.
 
-3. As a potential customer and paying customer I want to see the address of the shop. 
-              1. When the customer arives on the webpage, the customer can scroll down to the footer section.
-              2. In the footer section the customer can clearly see  the address.
+3. As a movie fan, I am interested in the average length of movie genre. 
+              1. When the movie fan arives on the dashboard, he/she can see several charts on the page.
+              2. Within the page, the movie fan can scroll down to the pie chart (Average runtime oer Genre).
               
-4. As a potential customer and paying customer I want to see the telephone contact of the shop.
-              1. When the customer arives on the webpage, the customer can scroll down to the footer section.
-              2. In the footer section the customer can clearly see  the telephone number of the makeup artist. 
+4. As a film critic, I am interested in the average runtime of the movie.
+              1. When the movie fan arives on the dashboard, he/she can see several charts on the page.
+              2. Within the page, the film critic can scroll down to the pie chart (Average runtime oer Genre). 
 
-5. As a potential customer, I want to know the price of the services rendered. 
-              1. When the customer arives on the webpage, he/she can see the navigation bar with several links.
-              2. Within the navigation link you can click on the prices link and it will smoothly scrool to the price section on the page.
-              3. Here you see a table of prices for the different services rendered.
+5. As a curator, I am intersted in the average movie genre rating. 
+              1. When the curator arives on the dashboard, he/she can see several charts on the page.
+              2. Within the page, the curator can scroll down to the pie chart (Average ratings per Genre).
             
-6. As a potential customer, I would want to see a portfolio of  make up services . 
-              1. When the customer arives on the webpage, he/she can see the navigation bar with several links.
-              2. Within the navigation link you can click on the portfolio link and it will smoothly scrool to the portfolio section on the page.
+6. As an investor, I am interested in knowing which genre is most profitable. 
+              1. When the investor arives on the dashboard, he/she can see several charts on the page.
+              2. Within the page, the investor can scroll down to the stacked bar chart (Revenue by Year per Genre).
 
-7. As a potential customer, I would love to read about the reviews of some customers who have used R'beauty services. 
-              1. When the customer arives on the webpage, he/she can see the navigation bar with several links.
-              2. Within the navigation link you can click on the reviews link and it will smoothly scrool to the reviews section on the page.
-              3. Here you can see 3 specially picked out reviews from previous customers.
+7. As an investor, I am interested in how many movies are produced each year.
+              1. When the investor arives on the dashboard, he/she can see several charts on the page.
+              2. The investor can then click on the year selector which provides the number of blockbuster movies produced each year.
 
-8. As a potential customer, I want to know more about the makeup artist 
-              1. When the customer arives on the webpage, he/she can see the navigation bar with several links.
-              2. Within the navigation link you can click on the about link and it will smoothly scrool to the about section on the page.
-              3. Here the interested client can read more about the makeup artist.
-
-9. As the make up artist, I want to provide my social media links so that customers can follow my updates 
-              1. When the makeup artist arives on the webpage, the makeup artist can scroll down to the footer section.
-              2. In the footer section the makeup artist will see the social media links for the business.
-
-10. As the makeup artist, I want my logo on to be visible on my website 
-              1. When the makeup artist arives on the webpage, the makeup artist lookout for the navigation menu
-              2. In the navigation menu the makeup artist will see the logo for the business.
 
 
 ### Manual Testing
 
 #####  Home Page:
 
-1. Navigation bar 
+1. Bar Chart 
               1. Go to the Home Page from a desktop.
               2. Inspect all links, icons, background and content in the navigation menu to ensure they are appearing correctly on the page.
               3. Move the cusor to the top-right section of the navigation bar, hover over each link and verify that the hover affects are working (i.e. background color changes to brown, font color to #964433).

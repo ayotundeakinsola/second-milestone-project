@@ -1,4 +1,4 @@
-# IMDB Dashboard
+# [IMDB Dashboard](https://ayotundeakinsola.github.io/second-milestone-project/ "IMDB Dashboard")
 
 The IMDB dashboard is a data set of 1,000 most popular movies on IMDB in the time period between the years 2006 - 2016. The data set contains
 blockbuster movies such as The Guardians of galaxy Vol.1, La La Land, Fantastic Beasts and Where to Find Them, 	Deadpool and so much more! 

@@ -9,7 +9,7 @@ body {
 /* Background Image */
 
 body {
-    background-image: url('../images/background.jpeg') center center cover no-repeat fixed;
+    background-image: url('../images/background.jpeg');
     height: 100%;
     width: auto;
 }
@@ -57,7 +57,7 @@ body {
 
 }
 
-/* Media Queries */
+/* Media Queries 
 
 @media (min-width: 662px) {
     body {
@@ -73,7 +73,8 @@ body {
     .navbar-brand {
         font-size: 2rem;
         color: black;
-    }
+    } 
+    center center cover no-repeat fixed*/
 
     /*---Container----*/
     .content-container {

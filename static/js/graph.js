@@ -55,8 +55,8 @@ function show_movie_year(ndx) {
     var group = dim.group();
 
     dc.barChart("#movie-year")
-        .width(500)
-        .height(300)
+        .width(800)
+        .height(400)
         .margins({ top: 10, right: 50, bottom: 40, left: 50 })
         .dimension(dim)
         .group(group)
@@ -221,8 +221,8 @@ function show_stacked_chart(ndx) {
 
     var stackedChart = dc.barChart("#stacked-chart");
     stackedChart
-        .width(600)
-        .height(500)
+        .width(800)
+        .height(400)
         .margins({ top: 10, right: 50, bottom: 40, left: 50 })
         .dimension(year_dim)
         .group(RevenueByYearGenreAction, "Action")
@@ -242,7 +242,7 @@ function show_stacked_chart(ndx) {
         .xUnits(dc.units.ordinal)
         .yAxisLabel("Revenue (millions)")
         .xAxisLabel("Year")
-        .legend(dc.legend().x(420).y(0).itemHeight(10).gap(5));
+        .legend(dc.legend().x(650).y(0).itemHeight(15).gap(5));
 
     stackedChart.margins().right = 200;
 
@@ -295,14 +295,14 @@ function show_revenue_genre(ndx) {
 
     var compositeChart = dc.compositeChart('#composite-chart');
     compositeChart
-        .width(600)
-        .height(300)
+        .width(800)
+        .height(400)
         .margins({ top: 10, right: 50, bottom: 40, left: 50 })
         .dimension(year_dim)
         .x(d3.time.scale().domain([minYear, maxYear]))
         .xAxisLabel("Year")
         .yAxisLabel("Revenue (millions)")
-        .legend(dc.legend().x(500).y(0).itemHeight(10).gap(5))
+        .legend(dc.legend().x(650).y(0).itemHeight(15).gap(5))
         .renderHorizontalGridLines(true)
         .compose([
             dc.lineChart(compositeChart)
@@ -346,5 +346,5 @@ function show_revenue_genre(ndx) {
             .group(ThrillerRevenueByYear, 'Thriller')
         ])
         .brushOn(false)
-     compositeChart.margins().right = 150;
+     compositeChart.margins().right = 200;
 }

@@ -26,13 +26,13 @@
         <div class="container-fluid navalert-container">
             <div class="navbar-header">
                 <a href="#" class="navbar-brand"><img id="logo" src="static/images/imdb.jpg" alt="logo"></a>
-                    <h2 class="section-heading">IMDB DASHBOARD (2006 -2016)</h2>
-                    <div id="genre-selector">
-                        <p class="font-weight-bold text-center">GENRE</p>
-                    </div>
-                    <div id="year-selector">
-                        <p class="font-weight-bold text-center">YEAR</p>
-                    </div>
+                <h2 class="section-heading">IMDB DASHBOARD (2006 -2016)</h2>
+                <div id="genre-selector">
+                    <p class="font-weight-bold text-center">GENRE</p>
+                </div>
+                <div id="year-selector">
+                    <p class="font-weight-bold text-center">YEAR</p>
+                </div>
             </div>
         </div>
     </nav>
@@ -41,9 +41,10 @@
         <section class="section">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-4 text-center" id="movie-year">
-                        <p class="text-uppercase font-weight-bold ">Total Blockbuster Movies Per Year</p>
+                    <div class="col-xs-12 col-sm-12 text-center">
+                        <p class="section-paragraph">TOTAL BLOCKBUSTER MOVIES PER YEAR</p>
                     </div>
+                    <div class="col-xs-12 col-sm-12 text-center" id="movie-year"></div>
                 </div>
             </div>
         </section>
@@ -51,26 +52,42 @@
         <section class="section">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6 text-center" id="stacked-chart">
-                        <p class="text-uppercase font-weight-bold ">Revenue By Year Per Genre</p>
-                    </div>
 
-                    <div class="col-xs-12 col-sm-6 text-center" id="rating">
-                        <p class="text-uppercase font-weight-bold">Average Ratings Per Genre</p>
+                    <div class="col-xs-12 col-sm-12 text-center">
+                        <p class="section-paragraph">REVENUE BY YEAR PER GENRE</p>
                     </div>
+                    <div class="col-xs-12 col-sm-12 text-center" id="stacked-chart"></div>
                 </div>
             </div>
         </section>
 
+        <section class="section">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-xs-12 col-sm-12 text-center">
+                        <p class="section-paragraph">TOTAL REVENUE PER GENRE</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 text-center" id="composite-chart"></div>
+                </div>
+            </div>
+        </section>
+
+
         <section class="section4">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6 text-center" id="composite-chart">
-                        <p class="text-uppercase font-weight-bold">Total Revenue Per Genre</p>
+
+                    <div class="col-xs-12 col-sm-6 text-center">
+                        <p class="section-paragraph">AVERAGE RUNTIME PER GENRE</p>
                     </div>
-                    <div class="col-xs-12 col-sm-6 text-center" id="runtime">
-                        <p class="text-uppercase font-weight-bold ">Average Runtime Per Genre</p>
+
+                    <div class="col-xs-12 col-sm-6 text-center">
+                        <p class="section-paragraph">AVERAGE RATINGS PER GENRE</p>
                     </div>
+                    
+                    <div class="col-xs-12 col-sm-6 text-center" class="custom-chart" id="runtime"></div>
+                    <div class="col-xs-12 col-sm-6 text-center" class="custom-chart" id="rating"></div>
                 </div>
             </div>
         </section>

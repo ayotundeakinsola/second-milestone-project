@@ -24,7 +24,7 @@ body {
 
 .navbar {
     overflow: hidden;
-    padding-bottom: 20px;
+
     width: 100%;
 
 }
@@ -32,6 +32,11 @@ body {
 .navbar-brand {
     font-size: 2rem;
     color: black;
+}
+
+.navbar-default {
+    margin-bottom: 20px;
+    border-bottom: 5px outset #828282;
 }
 
 
@@ -57,6 +62,17 @@ body {
 
 }
 
+.section {
+    border-bottom: 5px outset #e6e6e6;
+    padding: 30px 0;
+}
+
+.section1 {
+    border-bottom: 5px outset #e6e6e6;
+    border-top: 5px outset #e6e6e6;
+    padding: 30px 0;
+}
+
 /* Media Queries 
 
 @media (min-width: 662px) {
@@ -75,8 +91,3 @@ body {
         color: black;
     } 
     center center cover no-repeat fixed*/
-
-    /*---Container----*/
-    .content-container {
-        padding-top: 20px;
-    }

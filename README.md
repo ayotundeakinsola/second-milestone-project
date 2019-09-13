@@ -363,7 +363,7 @@ crossfilter, some years are missing. I have tried adjusting this but to no avail
 
 ### Media
 
-* The background image for the dashboard was gotten from: [wallpaperplay](https://wallpaperplay.com/board/filmmaking-wallpapers "wallpaperplay")
+* The background image for the dashboard was gotten from: [pixabay](https://pixabay.com/illustrations/director-film-acting-recording-1013873/ "pixabay")
 
 * The dataset is gotten from Kaggle website: [Kaggle](https://www.kaggle.com/PromptCloudHQ/imdb-data "Kaggle")
 

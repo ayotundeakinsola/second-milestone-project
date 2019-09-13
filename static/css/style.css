@@ -1,21 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap: 400,500,600,700');
 
-
-
-
-/* Background Image */
-
-body {
-    background: url('../images/background.jpeg') no-repeat 0% 20% fixed;
-    height: 100%;
-    width: auto;
-    overflow-x: hidden;
-    font-family: 'Rubik', sans-serif;
-    color: black;
-}
-
-
-
 /* Selector */
 
 .section-heading,
@@ -108,38 +92,29 @@ p.font-weight-bold.text-center {
 }
 
 .section-paragraph {
-	line-height: 1.2;
-	font-weight: bold;
+    line-height: 1.2;
+    font-weight: bold;
 }
 
 
-@media (min-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
-}
-
-/* Media Queries 
-
-@media (min-width: 662px) {
+@media (min-width: 320px) {
     body {
-        background-image: url('../images/background.jpeg');
-        overflow-x: hidden;
+        background-image: url('../images/background6.jpg');
         height: 100%;
         width: auto;
-    }
-}
-
-@media screen and (max-width: 500px) {
-
-    .navbar-brand {
-        font-size: 2rem;
+        overflow-x: hidden;
+        font-family: 'Rubik', sans-serif;
         color: black;
-    } 
-    center center cover no-repeat fixed
+        background-position: 320px 60px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-attachment: fixed;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+    }
     
-    .navbar-brand {
-    font-size: 2rem;
-    color: black;
+    body.scrolled {
+    background-image: url('../images/background6.jpg');
 }
-*/
+}

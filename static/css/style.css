@@ -97,6 +97,7 @@ p.font-weight-bold.text-center {
 }
 
 
+/* Meedia Queries */
 @media (min-width: 320px) {
     body {
         background-image: url('../images/background.jpg');

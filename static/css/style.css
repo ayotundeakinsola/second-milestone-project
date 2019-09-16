@@ -99,7 +99,7 @@ p.font-weight-bold.text-center {
 
 @media (min-width: 320px) {
     body {
-        background-image: url('../images/background6.jpg');
+        background-image: url('../images/background.jpg');
         height: 100%;
         width: auto;
         overflow-x: hidden;
@@ -115,6 +115,6 @@ p.font-weight-bold.text-center {
     }
     
     body.scrolled {
-    background-image: url('../images/background6.jpg');
+    background-image: url('../images/background.jpg');
 }
 }

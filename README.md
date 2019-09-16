@@ -335,6 +335,12 @@ The dashboard worked perfectly on other screen sizes and there was no issue with
 2. When reduced to mobile view the responsiveness a times doesn't work until when refreshed. I do not know what causes this to happen. 
 3. When I test the stacked chart alone, data is available for all the years on the x-axis. but when I add other charts and run the 
 crossfilter, some years are missing. I have tried adjusting this but to no avail. My mentor thinks it is because some data are missing. 
+4. When I reduced the resolution to mobile view, the graphs are not fully responsive. I carried out several tests but I found out it is a
+common problem with d3.js on mobile.
+5. The numbers that appear when you hover through the REVENUE BY YEAR PER GENRE & TOTAL RATINGS PER GENRE are not approximated to the 
+nearest whole number. In future updates, this would be addressed.
+6. The TOTAL RATINGS PER GENRE pie chart works perectly but it ould be more interesting to know the average runtime per genre. In future 
+updates this would be addressed. 
 
 # Deployment
 
@@ -344,7 +350,7 @@ crossfilter, some years are missing. I have tried adjusting this but to no avail
 2. Select the repository related to this project: ayotundeakinsola/second-milestone-project.
 3. In the menu click on settings and scroll down to the GitHub Pages section.
 4. From the "Source" dropdown menu, select "Master Branch" and click "Save" 
-5. A pop-up message "Your site is ready to be published at https://username.github.io/Bootstrap/" will appear under Github Pages
+5. A pop-up message "Your site is ready to be published at  https://ayotundeakinsola.github.io/second-milestone-project/" will appear under Github Pages
 6. The page will automatically refresh and the website is now deployed.
 7. Once your website launches you can retest it to ensure that all the sections on the pages are working as stated in the testing section
 

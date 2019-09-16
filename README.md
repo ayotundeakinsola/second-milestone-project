@@ -145,6 +145,7 @@ I am fully confident in the style sheet.
 
 I used JSHint to detect errors in my graph.js There were no errors found. 
 
+I also wrote failing tests or mockups in order to test my charts. This can be seen from my commits of several JS and HTML files that I created. 
 
 ### Testing user stories from the UX section 
 
